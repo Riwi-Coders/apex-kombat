@@ -90,37 +90,37 @@
 
                 <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
                     <div class="lg:col-span-2 relative overflow-hidden border border-plata/30 min-h-[500px] flex flex-col">
-                        <img src="./img/robot-hero.png" alt="White Eagle" id="robot-img" class="object-cover w-full">
+                        <img src="./img/robot-white.jpeg" alt="White Eagle" id="robot-img" class="object-cover w-full">
                         <div class="bg-negrocarbon/15 p-6 flex flex-col flex-1 justify-end ">
                             <p id="robot-code" class="text-fresa text-xs tracking-[0.2em] uppercase">T800-WE01 · HEAVYWEIGHT</p>
-                            <h2 id="robot-name" class="text-blanco text-5xl" font-bold uppercase>WHITE EAGLE</h2>
+                            <h2 id="robot-name" class="text-blanco text-5xl font-bold uppercase">WHITE EAGLE</h2>
                         </div>
                     </div>
                     <div class="lg:col-span-3 flex flex-col gap-6">
                         <div class="grid grid-cols-3 bg-plata/20 gap-px border border-plata/20">
                             <div class="bg-negrocarbon p-4 hover:bg-blanco/5 transition duration-200 ease-in-out">
                                 <p class="text-plata text-xs tracking-[0.1em] mb-2 uppercase">weight</p>
-                                <p id="stat-weight" class="text-blanco ext-1xl font-medium">78 kg</p>
+                                <p id="stat-weight" class="text-blanco text-xl font-medium">78 kg</p>
                             </div>
                             <div class="bg-negrocarbon p-4 hover:bg-blanco/5 transition duration-200 ease-in-out">
                                 <p class="text-plata text-xs tracking-[0.1em] mb-2 uppercase">joint torque</p>
-                                <p id="stat-torque" class="text-blanco ext-1xl font-medium">450 Nm</p>
+                                <p id="stat-torque" class="text-blanco text-xl font-medium">450 Nm</p>
                             </div>
                             <div class="bg-negrocarbon p-4 hover:bg-blanco/5 transition duration-200 ease-in-out">
                                 <p class="text-plata text-xs tracking-[0.1em] mb-2 uppercase">actuator type</p>
-                                <p id="stat-type" class="text-blanco ext-1xl font-medium">Planetary BLDC + harmonic drive</p>
+                                <p id="stat-type" class="text-blanco text-xl font-medium">Planetary BLDC + harmonic drive</p>
                             </div>
                             <div class="bg-negrocarbon p-4 hover:bg-blanco/5 transition duration-200 ease-in-out">
                                 <p class="text-plata text-xs tracking-[0.1em] mb-2 uppercase">ko record</p>
-                                <p id="stat-record" class="text-blanco text-1xl font-medium">11 KO · 14-1-0</p>
+                                <p id="stat-record" class="text-blanco text-xl font-medium">11 KO · 14-1-0</p>
                             </div>
                             <div class="bg-negrocarbon p-4 hover:bg-blanco/5 transition duration-200 ease-in-out">
                                 <p class="text-plata text-xs tracking-[0.1em] mb-2 uppercase">strike velocity</p>
-                                <p id="stat-velocity" class="text-blanco ext-1xl font-medium">9.4 m/s</p>
+                                <p id="stat-velocity" class="text-blanco text-xl font-medium">9.4 m/s</p>
                             </div>
                             <div class="bg-negrocarbon p-4 hover:bg-blanco/5 transition duration-200 ease-in-out">
                                 <p class="text-plata text-xs tracking-[0.1em] mb-2 uppercase">degrees of freedom</p>
-                                <p id="stat-DoF" class="text-blanco ext-1xl font-medium">31 DoF</p>
+                                <p id="stat-DoF" class="text-blanco text-xl font-medium">31 DoF</p>
                             </div>
                         </div>
                         <div class="border border-plata/30 p-6">
@@ -278,14 +278,36 @@
 
     <script>
         const robots = {
-            "white-eagle": { name: "WHITE EAGLE", code: "T800-WE01 · HEAVYWEIGHT", weight: "78 kg",},
-            "steel-titan": { name: "STEEL TITAN", code: ""},
-            "red-falcon": { name: "RED FALCON", code: ""},
+            "white-eagle": { name: "WHITE EAGLE", code: "T800-WE01 · HEAVYWEIGHT", weight: "78 kg", torque: "450 Nm", type: "Planetary BLDC + harmonic drive", record: "11 KO · 14-1-0", velocity: "9.4 m/s", DoF: "31 DoF", img: "./img/robot-white.jpeg"},
+            "steel-titan": { name: "STEEL TITAN", code: "T800-ST03 · Super Heavyweight", weight: "92 kg", torque: "520 Nm", type: "Hydraulic linear (hip/knee)", record: "10 KO · 12-2-0", velocity: "8.1 m/s", DoF: "29 DoF", img: "./img/robot-steel.jpeg"},
+            "red-falcon":  { name: "RED FALCON",  code: "T800-RF07 · Middleweight", weight: "64 kg", torque: "380 Nm", type: "Quasi-direct drive BLDC", record: "6 KO · 9-0-0", velocity: "10.6 m/s", DoF: "33 DoF", img: "./img/robot-red.jpeg"},
         };
 
-        document.querySelectorAll(".tab")
-        forEach(element => {
-            addEventListener("click", boton.dataset.robot, document.getElementById("robot-name").textContent = datos.name, classList.remove(border-plata, text-plata), classList.add(bg-fresa, border-garnet, text-blanco))
+        const tabs = document.querySelectorAll(".tab");
+
+        tabs.forEach(function (boton) {
+            boton.addEventListener("click", function () {
+                const datos = robots[boton.dataset.robot];
+
+                document.getElementById("robot-name").textContent = datos.name;
+                document.getElementById("robot-code").textContent = datos.code;
+                document.getElementById("robot-code").classList.add("pt-1");
+                document.getElementById("stat-weight").textContent = datos.weight;
+                document.getElementById("stat-torque").textContent = datos.torque;
+                document.getElementById("stat-type").textContent = datos.type;
+                document.getElementById("stat-record").textContent = datos.record;
+                document.getElementById("stat-velocity").textContent = datos.velocity;
+                document.getElementById("stat-DoF").textContent = datos.DoF;
+                document.getElementById("robot-img").src = datos.img;
+
+                tabs.forEach(function (t) {
+                    t.classList.remove("bg-fresa", "border-garnet", "text-plata");
+                    t.classList.add("border-plata", "text-plata", "hover:text-blanco", "transition", "duration-300", "ease-in-out");
+                });
+
+                boton.classList.remove("border-plata", "text-plata", "hover:text-blanco", "transition", "duration-300", "ease-in-out");
+                boton.classList.add("bg-fresa", "border-garnet", "text-blanco");
+            });
         });
     </script>
 </body>
