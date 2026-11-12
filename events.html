@@ -1,121 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events & Tickets | APEX Kombat</title>
-    <link href="./dist/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
 </head>
 
 <body class="bg-apex-onyx text-apex-smoke">
-
     <!-- NAVBAR -->
     <header class="px-4 pt-3 py-4 md:px-8 border border-apex-carbon bg-apex-onyx">
-
         <!-- MENU -->
-
-        <nav class="fixed top-2 left-0 right-0 z-50 mx-auto flex max-w-6xl items-center justify-between border border-apex-carbon backdrop-blur-md bg-black/70  px-4 py-2 md:px-5">
-
+        <nav
+            class="fixed top-2 left-0 right-0 z-50 mx-auto flex max-w-7xl items-center justify-between border border-white/10 backdrop-blur-md bg-black/70  px-4 py-2 md:px-5">
             <a href="#" class="flex flex-col leading-none">
-
-                <span class="font-body mb-1 text-sm font-semibold tracking-[2px] text-apex-grey uppercase">
-                    Presented by Monster's Cinema
-                </span>
-
-                <span class="font-display text-3xl font-bold tracking-tight">
-                    APEX<span class="text-[#E63940]">.</span>
-                </span>
-
+                <span class="font-body mb-1 text-[8px] font-semibold tracking-[2px] text-apex-silver">PROGRAMED
+                    DESTRUCTION</span>
+                <span class="font-display text-3xl text-white font-bold tracking-tight">APEX<span
+                        class="text-apex-red">.</span></span>
             </a>
 
-            <ul class="hidden items-center gap-7 text-[10px] font-medium tracking-[1.5px] text-gray-400 md:flex">
-
+            <ul
+                class="font-body hidden items-center gap-7 text-sm font-medium tracking-[1.5px] text-apex-silver md:flex">
                 <li>
-                    <a href="#athletes" class="transition-colors hover:text-white">
-                        ATHLETES
-                    </a>
+                    <a href="#athletes" class="transition-colors hover:text-white">ATHLETES</a>
+                </li>
+                <li>
+                    <a href="#fight-card" class="transition-colors hover:text-white">FIGHT CARD</a>
                 </li>
 
                 <li>
-                    <a href="#fight-card" class="transition-colors hover:text-white">
-                        FIGHT CARD
-                    </a>
+                    <a href="#highlights" class="transition-colors hover:text-white">HIGHLIGHTS</a>
                 </li>
 
                 <li>
-                    <a href="#highlights" class="transition-colors hover:text-white">
-                        HIGHLIGHTS
-                    </a>
+                    <a href="#tickets" class="transition-colors hover:text-white">EVENTS & TICKETS</a>
                 </li>
-
-                <li>
-                    <a href="#tickets" class="transition-colors hover:text-white">
-                        EVENTS & TICKETS
-                    </a>
-                </li>
-
             </ul>
 
             <a href=""
-                class="hidden bg-[#E63940] px-4 py-2 text-xs font-bold transition-colors hover:bg-red-700 md:block">
-                BUY TICKETS
-            </a>
+                class="font-display hidden bg-apex-mahogany px-4 py-2 text-md text-white font-bold transition-colors hover:bg-apex-red md:block">BUY
+                TICKETS</a>
 
             <details class="relative md:hidden">
+                <summary class="cursor-pointer list-none border border-white/20 text-white px-3 py-2 text-xs font-bold">
+                    MENU</summary>
 
-                <summary class="cursor-pointer list-none border border-apex-carbon px-3 py-2 text-xs font-bold">
-                    MENU
-                </summary>
-
-                <ul class="absolute right-0 top-full z-50 mt-3 flex w-52 flex-col gap-4 border border-apex-carbon bg-[#111111] p-5 text-sm font-semibold text-gray-300 shadow-xl">
-
+                <ul
+                    class="absolute right-0 top-full z-50 mt-3 flex w-52 flex-col gap-4 border border-white/15 bg-apex-onyx p-5 text-sm font-semibold text-gray-300 shadow-xl">
                     <li><a href="#athletes" class="hover:text-white">ATHLETES</a></li>
-
                     <li><a href="#fight-card" class="hover:text-white">FIGHT CARD</a></li>
-
                     <li><a href="#highlights" class="hover:text-white">HIGHLIGHTS</a></li>
-
                     <li><a href="#tickets" class="hover:text-white">EVENTS & TICKETS</a></li>
-
-                    <li>
-                        <a href="#" class="block bg-[#E63940] px-4 py-3 text-center text-white">
-                            BUY TICKETS
-                        </a>
-                    </li>
-
+                    <li><a href="#" class="font-display block bg-apex-mahogany px-4 py-3 text-center text-white">BUY TICKETS</a></li>
                 </ul>
-
             </details>
-
         </nav>
 
     </header>
 
     <main>
-        
+
         <!-- HERO -->
         <section id="hero" class="mx-auto mt-16 w-full max-w-[110rem]">
             <p class="font-body text-apex-red mt-2 uppercase tracking-widest">Ticket Office</p>
             <h1 class="font-display mt-2 text-8xl font-black uppercase">Events & Tickets</h1>
-            <p class="font-body text-sm pb-3 text-apex-silver ">Pick a fight night, choose your venue — arena or Monster's Drive-In big-screen — and check out.</p>
+            <p class="font-body text-sm pb-3 text-apex-silver ">Pick a fight night, choose your venue — arena or
+                Monster's Drive-In big-screen — and check out.</p>
 
-            
+
         </section>
 
 
         <!-- ARENA SHOWCASE -->
         <section id="arena-showcase"
-        class="relative isolate mx-auto mt-10 max-w-[110rem] min-h-112 overflow-hidden border border-gray-700">
+            class="relative isolate mx-auto mt-10 max-w-[110rem] min-h-112 overflow-hidden border border-gray-700">
 
             <!-- Arena image -->
             <img src="./img/hero-arena-bg.jfif" alt="" class="absolute inset-0 z-0 h-full w-full object-cover ">
 
             <!-- Dark overlay -->
-            <div class="pointer-events-none absolute inset-0 z-10 bg-linear-to-r from-black/90 via-black/40 to-black/20">
+            <div
+                class="pointer-events-none absolute inset-0 z-10 bg-linear-to-r from-black/90 via-black/40 to-black/20">
             </div>
 
-                <!-- Arena information -->
+            <!-- Arena information -->
             <div class="relative z-20 flex min-h-70 items-end justify-between gap-6 p-6">
 
                 <div class="relative">
@@ -144,8 +114,7 @@
                         </div>
 
                         <div>
-                            <p id="ringside-count"
-                                class="font-display text-4xl font-black text-apex-red">
+                            <p id="ringside-count" class="font-display text-4xl font-black text-apex-red">
                                 480
                             </p>
 
@@ -155,8 +124,7 @@
                         </div>
 
                         <div>
-                            <p id="vip-count"
-                                class="font-display text-4xl font-black text-apex-red">
+                            <p id="vip-count" class="font-display text-4xl font-black text-apex-red">
                                 1,200
                             </p>
 
@@ -166,8 +134,7 @@
                         </div>
 
                         <div>
-                            <p id="general-count"
-                                class="font-display text-4xl font-black text-apex-red">
+                            <p id="general-count" class="font-display text-4xl font-black text-apex-red">
                                 6,320
                             </p>
 
@@ -180,7 +147,7 @@
 
                 </div>
 
-                
+
                 <!-- SEAT PREVIEW -->
                 <div class="hidden w-full max-w-md border border-apex-carbon bg-black/80 p-4 sm:block">
 
@@ -208,22 +175,19 @@
                     <div class="relative mx-auto mt-5 flex aspect-square w-48 items-center justify-center">
 
                         <!-- GENERAL ACCESS -->
-                        <button id="general-area"
-                            aria-label="General Access seating area"
+                        <button id="general-area" aria-label="General Access seating area"
                             class="absolute inset-0 bg-apex-carbon transition-colors hover:bg-apex-silver"
                             style="clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);">
                         </button>
 
                         <!-- VIP -->
-                        <button id="vip-area"
-                            aria-label="VIP seating area"
+                        <button id="vip-area" aria-label="VIP seating area"
                             class="absolute inset-[12%] bg-apex-mahogany transition-colors hover:bg-apex-red"
                             style="clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);">
                         </button>
 
                         <!-- RINGSIDE -->
-                        <button id="ringside-area"
-                            aria-label="Ringside seating area"
+                        <button id="ringside-area" aria-label="Ringside seating area"
                             class="absolute inset-[25%] bg-apex-carbon transition-colors hover:bg-apex-silver"
                             style="clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);">
                         </button>
@@ -243,13 +207,11 @@
                     <!-- SELECTED CATEGORY INFO -->
                     <div class="mt-4 flex items-center justify-between">
 
-                        <p id="seat-description"
-                            class="font-body text-xs text-apex-silver">
+                        <p id="seat-description" class="font-body text-xs text-apex-silver">
                             Rows A-C · steps from the cage
                         </p>
 
-                        <p id="seat-availability"
-                            class="font-display font-bold text-apex-red">
+                        <p id="seat-availability" class="font-display font-bold text-apex-red">
                             480 Seats
                         </p>
 
@@ -258,7 +220,7 @@
                 </div>
 
             </div>
-                
+
         </section>
 
 
@@ -288,7 +250,8 @@
                         </div>
                     </div>
 
-                    <div class="event-card mt-4 border border-apex-carbon bg-apex-onyx p-4 hover:border-apex-silver" data-event="1">
+                    <div class="event-card mt-4 border border-apex-carbon bg-apex-onyx p-4 hover:border-apex-silver"
+                        data-event="1">
                         <div class="flex items-center justify-between gap-4">
                             <div>
                                 <h3 class="font-display text-2xl font-bold uppercase text-apex-smoke">
@@ -305,7 +268,8 @@
                         </div>
                     </div>
 
-                    <div class="event-card mt-4 border border-apex-carbon bg-apex-onyx p-4 hover:border-apex-silver" data-event="2">
+                    <div class="event-card mt-4 border border-apex-carbon bg-apex-onyx p-4 hover:border-apex-silver"
+                        data-event="2">
                         <div class="flex items-center justify-between gap-4">
                             <div>
                                 <h3 class="font-display text-2xl font-bold uppercase text-apex-smoke">
@@ -322,7 +286,8 @@
                         </div>
                     </div>
 
-                    <div class="event-card mt-4 border border-apex-carbon bg-apex-onyx p-4 hover:border-apex-silver " data-event="3">
+                    <div class="event-card mt-4 border border-apex-carbon bg-apex-onyx p-4 hover:border-apex-silver "
+                        data-event="3">
                         <div class="flex items-center justify-between gap-4">
                             <div>
                                 <h3 class="font-display text-2xl font-bold uppercase text-apex-smoke">
@@ -340,367 +305,320 @@
                     </div>
                 </div>
                 <!-- TICKETS -->
-                <div id="ticket-panel"
-    class="border border-apex-carbon bg-apex-carbon p-5">
+                <div id="ticket-panel" class="border border-apex-carbon bg-apex-carbon p-5">
 
-    <!-- EVENT INFORMATION -->
-    <div>
-        <p id="selected-date"
-            class="font-body text-xs font-bold uppercase tracking-widest text-apex-red">
-            Sat, Dec 12 2026 · 8PM ET
-        </p>
-
-        <h2 id="selected-title"
-            class="font-display mt-2 text-3xl font-bold uppercase">
-            APEX 08: White Eagle vs. Steel Titan
-        </h2>
-    </div>
-
-    <!-- VENUE SELECTION -->
-    <div class="mt-6">
-
-        <p class="font-body text-xs font-bold uppercase tracking-widest text-apex-silver">
-            Venue
-        </p>
-
-        <div id="venue-options" class="mt-3 space-y-2">
-
-            <!-- Venue 1 -->
-            <button type="button"
-                class="flex w-full items-center justify-between border border-apex-red bg-apex-garnet p-3 text-left">
-
-                <span class="font-body text-sm">
-                    T-Mobile Arena · Las Vegas, NV
-                </span>
-
-            </button>
-
-            <!-- Venue 2 -->
-            <button type="button"
-                class="flex w-full items-center justify-between border border-apex-carbon p-3 text-left hover:border-apex-red">
-
-                <span class="font-body text-sm">
-                    Monster's Drive-In Cinema · Los Angeles, CA
-                </span>
-
-                <span class="text-xs font-bold uppercase text-apex-red">
-                    Special Screening
-                </span>
-
-            </button>
-
-        </div>
-    </div>
-
-    <!-- TICKET TIERS -->
-    <div class="mt-6">
-
-        <p class="font-body text-xs font-bold uppercase tracking-widest text-apex-silver">
-            Ticket Tier
-        </p>
-
-        <div id="ticket-options" class="mt-3 space-y-2">
-
-            <!-- RINGSIDE -->
-            <div class="border border-apex-red bg-apex-garnet">
-
-                <div class="flex items-center justify-between p-3">
-
-                    <div>
-                        <h3 class="font-display font-bold uppercase">
-                            Ringside
-                        </h3>
-
-                        <p class="font-body text-xs text-apex-silver">
-                            Rows A-C · cage-side view
+                    <!-- EVENT INFORMATION -->
+                    <div class>
+                        <p id="selected-date"
+                            class="font-body text-xs font-bold uppercase tracking-widest text-apex-red">
+                            Sat, Dec 12 2026 · 8PM ET
                         </p>
+
+                        <h2 id="selected-title" class="font-display mt-2 text-3xl font-bold uppercase">
+                            APEX 08: White Eagle vs. Steel Titan
+                        </h2>
                     </div>
 
-                    <p class="font-display text-3xl font-bold">
-                        $150 <span class="text-xs">USD</span>
-                    </p>
+                    <!-- VENUE SELECTION -->
+                    <div class="mt-6">
 
-                </div>
-
-                <button type="button"
-                    class="w-full bg-apex-red py-2 font-body text-xs font-bold uppercase tracking-wider hover:bg-apex-mahogany">
-                    ₿ Pay with Crypto (Live CoinGecko FX)
-                </button>
-
-            </div>
-
-            <!-- VIP -->
-            <div class="border border-apex-carbon bg-apex-carbon">
-
-                <div class="flex items-center justify-between p-3">
-
-                    <div>
-                        <h3 class="font-display font-bold uppercase">
-                            Drive-In VIP Box
-                        </h3>
-
-                        <p class="font-body text-xs text-apex-silver">
-                            Private car bay · concierge snacks · per vehicle
+                        <p class="font-body text-xs font-bold uppercase tracking-widest text-apex-silver">
+                            Venue
                         </p>
+
+                        <div id="venue-options" class="mt-3 space-y-2">
+
+                            <!-- Venue 1 -->
+                            <button type="button"
+                                class="flex w-full items-center justify-between border border-apex-red bg-apex-garnet p-3 text-left">
+
+                                <span class="font-body text-sm">
+                                    T-Mobile Arena · Las Vegas, NV
+                                </span>
+
+                            </button>
+
+                            <!-- Venue 2 -->
+                            <button type="button"
+                                class="flex w-full items-center justify-between border border-apex-carbon p-3 text-left hover:border-apex-red">
+
+                                <span class="font-body text-sm">
+                                    Monster's Drive-In Cinema · Los Angeles, CA
+                                </span>
+
+                                <span class="text-xs font-bold uppercase text-apex-red">
+                                    Special Screening
+                                </span>
+
+                            </button>
+
+                        </div>
                     </div>
 
-                    <p class="font-display text-3xl font-bold">
-                        $100 <span class="text-xs">USD</span>
-                    </p>
+                    <!-- TICKET TIERS -->
+                    <div class="mt-6">
 
-                </div>
-
-                <button type="button"
-                    class="w-full bg-apex-red py-2 font-body text-xs font-bold uppercase tracking-wider hover:bg-apex-mahogany">
-                    ₿ Pay with Crypto (Live CoinGecko FX)
-                </button>
-
-            </div>
-
-            <!-- GENERAL ADMISSION -->
-            <div class="border border-apex-carbon bg-apex-carbon">
-
-                <div class="flex items-center justify-between p-3">
-
-                    <div>
-                        <h3 class="font-display font-bold uppercase">
-                            General Admission
-                        </h3>
-
-                        <p class="font-body text-xs text-apex-silver">
-                            Upper bowl / open lawn
+                        <p class="font-body text-xs font-bold uppercase tracking-widest text-apex-silver">
+                            Ticket Tier
                         </p>
+
+                        <div id="ticket-options" class="mt-3 space-y-2">
+
+                            <!-- RINGSIDE -->
+                            <div class="border border-apex-red bg-apex-garnet">
+
+                                <div class="flex items-center justify-between p-3">
+
+                                    <div>
+                                        <h3 class="font-display font-bold uppercase">
+                                            Ringside
+                                        </h3>
+
+                                        <p class="font-body text-xs text-apex-silver">
+                                            Rows A-C · cage-side view
+                                        </p>
+                                    </div>
+
+                                    <p class="font-display text-3xl font-bold">
+                                        $150 <span class="text-xs">USD</span>
+                                    </p>
+
+                                </div>
+
+                                <button type="button"
+                                    class="w-full bg-apex-red py-2 font-body text-xs font-bold uppercase tracking-wider hover:bg-apex-mahogany">
+                                    ₿ Pay with Crypto (Live CoinGecko FX)
+                                </button>
+
+                            </div>
+
+                            <!-- VIP -->
+                            <div class="border border-apex-carbon bg-apex-carbon">
+
+                                <div class="flex items-center justify-between p-3">
+
+                                    <div>
+                                        <h3 class="font-display font-bold uppercase">
+                                            Drive-In VIP Box
+                                        </h3>
+
+                                        <p class="font-body text-xs text-apex-silver">
+                                            Private car bay · concierge snacks · per vehicle
+                                        </p>
+                                    </div>
+
+                                    <p class="font-display text-3xl font-bold">
+                                        $100 <span class="text-xs">USD</span>
+                                    </p>
+
+                                </div>
+
+                                <button type="button"
+                                    class="w-full bg-apex-red py-2 font-body text-xs font-bold uppercase tracking-wider hover:bg-apex-mahogany">
+                                    ₿ Pay with Crypto (Live CoinGecko FX)
+                                </button>
+
+                            </div>
+
+                            <!-- GENERAL ADMISSION -->
+                            <div class="border border-apex-carbon bg-apex-carbon">
+
+                                <div class="flex items-center justify-between p-3">
+
+                                    <div>
+                                        <h3 class="font-display font-bold uppercase">
+                                            General Admission
+                                        </h3>
+
+                                        <p class="font-body text-xs text-apex-silver">
+                                            Upper bowl / open lawn
+                                        </p>
+                                    </div>
+
+                                    <p class="font-display text-3xl font-bold">
+                                        $50 <span class="text-xs">USD</span>
+                                    </p>
+
+                                </div>
+
+                                <button type="button"
+                                    class="w-full bg-apex-red py-2 font-body text-xs font-bold uppercase tracking-wider hover:bg-apex-mahogany">
+                                    ₿ Pay with Crypto (Live CoinGecko FX)
+                                </button>
+
+                            </div>
+
+                        </div>
                     </div>
 
-                    <p class="font-display text-3xl font-bold">
-                        $50 <span class="text-xs">USD</span>
-                    </p>
+                    <!-- QUANTITY -->
+                    <div class="mt-5 flex items-center justify-between">
+
+                        <p class="font-body text-sm text-apex-silver">
+                            Quantity
+                        </p>
+
+                        <div class="flex items-center gap-4">
+
+                            <button id="decrease-quantity" type="button"
+                                class="border border-apex-carbon px-3 py-2 hover:border-apex-red">
+                                −
+                            </button>
+
+                            <span id="ticket-quantity" class="font-display font-bold">
+                                1
+                            </span>
+
+                            <button id="increase-quantity" type="button"
+                                class="border border-apex-carbon px-3 py-2 hover:border-apex-red">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CHECKOUT -->
+                    <button id="crypto-checkout" type="button"
+                        class="mt-5 flex w-full items-center justify-between bg-apex-red p-4 font-display font-bold uppercase transition-colors duration-300 hover:bg-apex-mahogany">
+
+                        <span>Checkout</span>
+
+                        <span id="ticket-total">$150</span>
+
+                    </button>
 
                 </div>
-
-                <button type="button"
-                    class="w-full bg-apex-red py-2 font-body text-xs font-bold uppercase tracking-wider hover:bg-apex-mahogany">
-                    ₿ Pay with Crypto (Live CoinGecko FX)
-                </button>
-
-            </div>
-
-        </div>
-    </div>
-
-    <!-- QUANTITY -->
-    <div class="mt-5 flex items-center justify-between">
-
-        <p class="font-body text-sm text-apex-silver">
-            Quantity
-        </p>
-
-        <div class="flex items-center gap-4">
-
-            <button id="decrease-quantity"
-                type="button"
-                class="border border-apex-carbon px-3 py-2 hover:border-apex-red">
-                −
-            </button>
-
-            <span id="ticket-quantity"
-                class="font-display font-bold">
-                1
-            </span>
-
-            <button id="increase-quantity"
-                type="button"
-                class="border border-apex-carbon px-3 py-2 hover:border-apex-red">
-                +
-            </button>
-
-        </div>
-
-    </div>
-
-    <!-- CHECKOUT -->
-    <button id="crypto-checkout"
-        type="button"
-        class="mt-5 flex w-full items-center justify-between bg-apex-red p-4 font-display font-bold uppercase transition-colors duration-300 hover:bg-apex-mahogany">
-
-        <span>Checkout</span>
-
-        <span id="ticket-total">$150</span>
-
-    </button>
-
-</div>
 
             </div>
         </section>
 
         <!-- SPONSORS -->
-<section id="sponsors"
-    class="mx-auto mt-20 w-full max-w-[110rem] pb-16">
+        <section class="border-t border-apex-silver/40 px-4 py-12 md:px-5">
+            <div class="mx-auto max-w-6xl">
+                <div class="mb-8 flex flex-col justify-between gap-4 pb-6 md:flex-row md:items-end">
+                    <div class="pt-4">
+                        <p class="font-body mb-2 text-xs font-bold uppercase tracking-[0.3em] text-apex-red">SOCIO TITULAR ·
+                            OFFICIAL PARTNERS</p>
+                        <h2 class="font-display text-4xl font-bold uppercase sm:text-5xl text-white">MONSTER'S CINEMA</h2>
+                    </div>
+                    <p class="font-body text-lg uppercase tracking-[0.2em] text-apex-silver">OFFICIAL HOST & PRESENTING SPONSOR
+                    </p>
+                </div>
 
-    <!-- SPONSOR HEADER -->
-    <div class="flex flex-wrap items-end justify-between gap-6">
-
-        <div>
-            <p class="font-body text-xs font-bold uppercase tracking-[0.3em] text-apex-red">
-                Socio titular · Official Partners
-            </p>
-
-            <h2 class="font-display mt-3 text-6xl font-black uppercase">
-                Monster's Cinema
-            </h2>
-        </div>
-
-        <p class="font-body mb-2 text-sm uppercase tracking-widest text-apex-silver">
-            Official Host & Presenting Sponsor
-        </p>
-
-    </div>
-
-    <!-- SPONSOR GRID -->
-    <div class="mt-10 grid grid-cols-2 border-l border-t border-apex-carbon md:grid-cols-4">
-
-        <div class="flex min-h-28 items-center justify-center border-b border-r border-apex-carbon p-5 transition-colors duration-300 hover:border-apex-silver">
-            <span class="font-display text-xl font-bold uppercase text-apex-silver transition-colors duration-300 hover:text-apex-smoke">
-                EngineAI
-            </span>
-        </div>
-
-        <div class="flex min-h-28 items-center justify-center border-b border-r border-apex-carbon p-5 transition-colors duration-300 hover:border-apex-silver">
-            <span class="font-display text-xl font-bold uppercase text-apex-silver transition-colors duration-300 hover:text-apex-smoke">
-                ServoTek
-            </span>
-        </div>
-
-        <div class="flex min-h-28 items-center justify-center border-b border-r border-apex-carbon p-5 transition-colors duration-300 hover:border-apex-silver">
-            <span class="font-display text-xl font-bold uppercase text-apex-silver transition-colors duration-300 hover:text-apex-smoke">
-                Kinetik
-            </span>
-        </div>
-
-        <div class="flex min-h-28 items-center justify-center border-b border-r border-apex-carbon p-5 transition-colors duration-300 hover:border-apex-silver">
-            <span class="font-display text-xl font-bold uppercase text-apex-silver transition-colors duration-300 hover:text-apex-smoke">
-                ArenaOne
-            </span>
-        </div>
-
-        <div class="flex min-h-28 items-center justify-center border-b border-r border-apex-carbon p-5 transition-colors duration-300 hover:border-apex-silver">
-            <span class="font-display text-xl font-bold uppercase text-apex-silver transition-colors duration-300 hover:text-apex-smoke">
-                Voltra
-            </span>
-        </div>
-
-        <div class="flex min-h-28 items-center justify-center border-b border-r border-apex-carbon p-5 transition-colors duration-300 hover:border-apex-silver">
-            <span class="font-display text-xl font-bold uppercase text-apex-silver transition-colors duration-300 hover:text-apex-smoke">
-                Torqline
-            </span>
-        </div>
-
-        <div class="flex min-h-28 items-center justify-center border-b border-r border-apex-carbon p-5 transition-colors duration-300 hover:border-apex-silver">
-            <span class="font-display text-xl font-bold uppercase text-apex-silver transition-colors duration-300 hover:text-apex-smoke">
-                Hexacore
-            </span>
-        </div>
-
-        <div class="flex min-h-28 items-center justify-center border-b border-r border-apex-carbon p-5 transition-colors duration-300 hover:border-apex-silver">
-            <span class="font-display text-xl font-bold uppercase text-apex-silver transition-colors duration-300 hover:text-apex-smoke">
-                Ironpulse
-            </span>
-        </div>
-
-    </div>
-
-</section>
+                <div class="body grid grid-cols-2 gap-px md:grid-cols-4 border-t border-apex-silver/5 bg-apex-silver/20">
+                    <div
+                        class="bg-apex-onyx p-6 text-center text-lg font-semibold tracking-[0.2em] text-apex-silver hover:text-white transition duration-300 ease-in-out cursor-default">
+                        ENGINEAI</div>
+                    <div
+                        class="bg-apex-onyx p-6 text-center text-lg font-semibold tracking-[0.2em] text-apex-silver hover:text-white transition duration-300 ease-in-out cursor-default">
+                        SERVOTEK</div>
+                    <div
+                        class="bg-apex-onyx p-6 text-center text-lg font-semibold tracking-[0.2em] text-apex-silver hover:text-white transition duration-300 ease-in-out cursor-default">
+                        KINETIK</div>
+                    <div
+                        class="bg-apex-onyx p-6 text-center text-lg font-semibold tracking-[0.2em] text-apex-silver hover:text-white transition duration-300 ease-in-out cursor-default">
+                        ARENAONE</div>
+                    <div
+                        class="bg-apex-onyx p-6 text-center text-lg font-semibold tracking-[0.2em] text-apex-silver hover:text-white transition duration-300 ease-in-out cursor-default">
+                        VOLTRA</div>
+                    <div
+                        class="bg-apex-onyx p-6 text-center text-lg font-semibold tracking-[0.2em] text-apex-silver hover:text-white transition duration-300 ease-in-out cursor-default">
+                        TORQLINE</div>
+                    <div
+                        class="bg-apex-onyx p-6 text-center text-lg font-semibold tracking-[0.2em] text-apex-silver hover:text-white transition duration-300 ease-in-out cursor-default">
+                        HEXACORE</div>
+                    <div
+                        class="bg-apex-onyx p-6 text-center text-lg font-semibold tracking-[0.2em] text-apex-silver hover:text-white transition duration-300 ease-in-out cursor-default">
+                        IRONPULSE</div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <footer class="border-t border-white/10 bg-[#111719]">
 
-            <div class="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-12 md:grid-cols-2 md:gap-16 md:px-5">
+        <div class="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-12 md:grid-cols-2 md:gap-16 md:px-5">
 
-                <!-- Marca -->
-                <div>
+            <!-- Marca -->
+            <div>
 
-                    <a href="#" class="inline-block text-3xl font-bold tracking-tight">
-                        APEX<span class="text-[#E5383B]">.</span>
+                <a href="#" class="inline-block text-3xl font-bold tracking-tight">
+                    APEX<span class="text-[#E5383B]">.</span>
+                </a>
+
+                <p class="mt-2 max-w-xs text-sm leading-relaxed text-gray-400">
+                    Real humanoid engineering. Real knockouts.
+                    Patrocinated by Monster's Cinema.
+                </p>
+
+                <!-- Redes sociales -->
+                <div class="mt-5 flex gap-3">
+
+                    <a href="#" aria-label="Instagram"
+                        class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-gray-300 transition-colors hover:border-[#E5383B] hover:text-white">
+                        IG
                     </a>
 
-                    <p class="mt-2 max-w-xs text-sm leading-relaxed text-gray-400">
-                        Real humanoid engineering. Real knockouts.
-                        Patrocinated by Monster's Cinema.
-                    </p>
+                    <a href="#" aria-label="YouTube"
+                        class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-gray-300 transition-colors hover:border-[#E5383B] hover:text-white">
+                        YT
+                    </a>
 
-                    <!-- Redes sociales -->
-                    <div class="mt-5 flex gap-3">
-
-                        <a href="#" aria-label="Instagram"
-                            class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-gray-300 transition-colors hover:border-[#E5383B] hover:text-white">
-                            IG
-                        </a>
-
-                        <a href="#" aria-label="YouTube"
-                            class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-gray-300 transition-colors hover:border-[#E5383B] hover:text-white">
-                            YT
-                        </a>
-
-                        <a href="#" aria-label="X"
-                            class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-gray-300 transition-colors hover:border-[#E5383B] hover:text-white">
-                            X
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- Suscripción -->
-                <div>
-
-                    <h2 class="text-xl font-bold uppercase">
-                        GET FIGHT ALERTS
-                    </h2>
-
-                    <p class="mt-1 text-xs text-gray-400">
-                        Presale codes, weigh-in streams and K.O. clips first.
-                    </p>
-
-                    <form class="mt-4 flex flex-col gap-2 sm:flex-row">
-
-                        <label for="email-alerts" class="sr-only">
-                            Email address
-                        </label>
-
-                        <input
-                            id="email-alerts"
-                            type="email"
-                            name="email"
-                            placeholder="you@email.com"
-                            autocomplete="email"
-                            required
-                            class="min-w-0 flex-1 border border-white/15 bg-[#0B090A] px-3 py-3 text-sm text-white outline-none focus:border-[#E5383B]">
-
-                        <button
-                            type="submit"
-                            class="bg-[#E5383B] px-6 py-3 text-sm font-bold uppercase transition-colors hover:bg-red-700">
-                            SUBSCRIBE
-                        </button>
-
-                    </form>
+                    <a href="#" aria-label="X"
+                        class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-gray-300 transition-colors hover:border-[#E5383B] hover:text-white">
+                        X
+                    </a>
 
                 </div>
 
             </div>
 
-            <!-- Copyright -->
-            <div class="border-t border-white/10">
+            <!-- Suscripción -->
+            <div>
 
-                <div class="mx-auto max-w-6xl px-4 py-5 text-xs text-gray-500 md:px-5">
-                    © 2026 APEX Combat League. All rights reserved.
-                </div>
+                <h2 class="text-xl font-bold uppercase">
+                    GET FIGHT ALERTS
+                </h2>
+
+                <p class="mt-1 text-xs text-gray-400">
+                    Presale codes, weigh-in streams and K.O. clips first.
+                </p>
+
+                <form class="mt-4 flex flex-col gap-2 sm:flex-row">
+
+                    <label for="email-alerts" class="sr-only">
+                        Email address
+                    </label>
+
+                    <input id="email-alerts" type="email" name="email" placeholder="you@email.com" autocomplete="email"
+                        required
+                        class="min-w-0 flex-1 border border-white/15 bg-[#0B090A] px-3 py-3 text-sm text-white outline-none focus:border-[#E5383B]">
+
+                    <button type="submit"
+                        class="bg-[#E5383B] px-6 py-3 text-sm font-bold uppercase transition-colors hover:bg-red-700">
+                        SUBSCRIBE
+                    </button>
+
+                </form>
 
             </div>
 
-        </footer>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-white/10">
+
+            <div class="mx-auto max-w-6xl px-4 py-5 text-xs text-gray-500 md:px-5">
+                © 2026 APEX Combat League. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
 
     <script src="./js/events.js"></script>
 </body>
+
 </html>
