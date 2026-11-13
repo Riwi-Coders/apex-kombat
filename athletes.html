@@ -6,53 +6,54 @@
     <title>Athletes</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body class="bg-apex-onyx light:bg-apex-smoke">
+<body class="min-h-screen overflow-x-hidden bg-apex-onyx text-white light:bg-apex-smoke light:text-apex-onyx font-body">
     <header class="px-4 pt-3 md:px-8">
+        <!-- MENU -->
         <nav
             class="fixed top-2 left-0 right-0 z-50 flex max-w-7xl items-center justify-between border border-white/10 backdrop-blur-md bg-apex-onyx/70 px-4 py-2 mx-4 md:px-5 md:mx-auto light:bg-white/85 light:border-apex-onyx/10 light:text-apex-onyx">
-            <a href="#" class="flex flex-col leading-none">
+            <a href="index.html" class="flex flex-col leading-none">
                 <span class="mb-1 text-[8px] font-semibold tracking-[2px] text-apex-silver uppercase light:text-apex-carbon/70">
                     Presented by Monster's Cinema
                 </span>
-                <span class="text-3xl font-bold text-white tracking-tight light:text-apex-onyx">
+                <span class="text-3xl font-bold text-white tracking-tight">
                     APEX<span class="text-apex-red light:text-apex-mahogany">.</span>
                 </span>
             </a>
             <ul class="hidden items-center gap-4 text-[10px] font-medium tracking-[1.5px] text-apex-silver lg:flex light:text-apex-carbon/70">
                 <li>
-                    <a href="./athletes.html" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                    <a href="./athletes.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
                         ATHLETES
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html#fight-card" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                    <a href="index.html#fight-card" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
                         FIGHT CARD
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html#highlights" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                    <a href="index.html#highlights" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
                         HIGHLIGHTS
                     </a>
                 </li>
                 <li>
-                    <a href="./tickets" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                    <a href="./events.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
                         EVENTS & TICKETS
                     </a>
                 </li>
                 <li>
-                    <a href="./hall-of-fame.html" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                    <a href="./hall-of-fame.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
                         HALL OF FAME
                     </a>
                 </li>
                 <li>
-                    <a href="./about.html" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                    <a href="./about.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
                         ABOUT
                     </a>
                 </li>
             </ul>
             <a type="button"
                 class="login hidden h-10 w-10 shrink-0 items-center justify-center border border-white/15 text-apex-grey transition-colors hover:border-apex-red hover:text-white lg:flex light:border-apex-onyx/15 light:hover:text-apex-mahogany light:hover:border-apex-mahogany light:text-apex-carbon"
-                aria-label="login" title="login" href="./login">
+                aria-label="login" title="login" href="#login">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"
                     aria-hidden="true">
@@ -65,19 +66,19 @@
                 BUY TICKETS
             </a>
             <details class="relative lg:hidden">
-                <summary class="cursor-pointer list-none border border-white/20 px-3 py-2 text-xs font-bold text-white light:border-apex-onyx/20 light:text-apex-onyx">
+                <summary class="cursor-pointer list-none border border-white/20 px-3 py-2 text-xs font-bold light:border-apex-onyx/20 light:text-apex-onyx">
                     MENU
                 </summary>
                 <ul
-                    class="absolute right-0 top-full z-50 mt-3 flex w-52 flex-col gap-4 border border-white/15 bg-apex-carbon p-5 text-sm font-semibold text-apex-grey shadow-xl light:border-apex-onyx/15 light:bg-white light:text-apex-carbon ">
-                    <li><a href="./athletes.html" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">ATHLETES</a></li>
-                    <li><a href="./index.html#fight-card" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">FIGHT CARD</a></li>
-                    <li><a href="./index.html#highlights" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">HIGHLIGHTS</a></li>
-                    <li><a href="./events.html" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">EVENTS & TICKETS</a></li>
-                    <li><a href="./hall-of-fame.html" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">HALL OF FAME</a></li>
-                    <li><a href="./about.html" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">ABOUT</a></li>
+                    class="absolute right-0 top-full z-50 mt-3 flex w-52 flex-col gap-4 border border-white/15 bg-apex-carbon p-5 text-sm font-semibold text-apex-grey shadow-xl light:border-apex-onyx/15 light:bg-white light:text-apex-carbon light:border-apex-onyx/10">
+                    <li><a href="./athletes" class="hover:text-white light:hover:text-apex-mahogany">ATHLETES</a></li>
+                    <li><a href="index.html#fight-card" class="hover:text-white light:hover:text-apex-mahogany">FIGHT CARD</a></li>
+                    <li><a href="index.html#highlights" class="hover:text-white light:hover:text-apex-mahogany">HIGHLIGHTS</a></li>
+                    <li><a href="./events.html" class="hover:text-white light:hover:text-apex-mahogany">EVENTS & TICKETS</a></li>
+                    <li><a href="./hall-of-fame.html" class="hover:text-white light:hover:text-apex-mahogany">HALL OF FAME</a></li>
+                    <li><a href="./about.html" class="hover:text-white light:hover:text-apex-mahogany">ABOUT</a></li>
                     <li>
-                        <button type="button" class="login flex items-center gap-2 text-apex-silver hover:text-white light:hover:text-apex-mahogany light:text-apex-carbon" aria-label="login">
+                        <button type="button" class="login flex items-center gap-2 hover:text-white light:hover:text-apex-mahogany light:text-apex-carbon" aria-label="login">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                                 class="h-4 w-4" aria-hidden="true">
@@ -88,16 +89,26 @@
                         </button>
                     </li>
                     <li>
-                        <a href="./events.html" class="block bg-apex-red px-4 py-3 text-center text-white">
+                        <a href="#" class="block bg-apex-red px-4 py-3 text-center text-white">
                             BUY TICKETS
                         </a>
                     </li>
                 </ul>
             </details>
             <button
+
                 id="theme-toggle"
+
                 type="button"
-                class="border border-white/20 px-3 py-2 text-white light:border-apex-onyx/20 light:text-apex-onyx light:bg-apex-smoke light:hover:bg-white" aria-label="Activar modo claro">☀️
+
+                class="border border-white/20 px-3 py-2 text-white light:border-apex-onyx/20 light:text-apex-onyx light:bg-apex-smoke light:hover:bg-white"
+
+                aria-label="Activar modo claro"
+
+            >
+
+                ☀️
+
             </button>
         </nav>
     </header>
