@@ -64,13 +64,13 @@ El modo claro ofrece una apariencia alternativa, conservando los colores y eleme
 
 El wireframe presenta la estructura inicial y la distribución de las secciones principales de la plataforma.
 
-[Ver wireframe de APEX](https://id-preview--ab0c3337-c732-4683-9bf3-ea40588f4afe.lovable.app/?__lovable_receipt=mat_2fh6nx3fdh9k388wqaffssktjm)
+[Ver wireframe de APEX](https://robot-rumble-wireframe.lovable.app)
 
 ### Mockup
 
 El mockup representa la propuesta visual del sitio, incluyendo colores, tipografía, imágenes y componentes de interfaz.
 
-[Ver mockup de APEX](https://preview--t800-arena-showdown.lovable.app/?__lovable_receipt=mat_3a2qzj6seb8yzr5je45bzkyxp6)
+[Ver mockup de APEX](https://robot-rumble-wireframe.lovable.app)
 
 ## Tecnologías
 
