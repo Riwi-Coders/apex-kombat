@@ -239,23 +239,3 @@ document.addEventListener("keydown", (event) => {
         codigoSecreto = "";
     }
 });
-
-// Modo Claro
-const themeButton = document.getElementById("theme-toggle");
-
-themeButton.addEventListener("click", () => {
-    document.documentElement.classList.toggle("light");
-});
-
-(() => {
-    const button = document.getElementById("theme-toggle");
-
-    button.addEventListener("click", (event) => {
-        // Evita que otro listener de index.js cambie el tema dos veces.
-        event.stopImmediatePropagation();
-
-        const isLight = document.documentElement.classList.toggle("light");
-        button.textContent = isLight ? "🌙" : "☀️";
-        button.setAttribute("aria-label", isLight ? "Activar modo oscuro" : "Activar modo claro");
-    }, true);
-})();
