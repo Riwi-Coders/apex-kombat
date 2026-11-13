@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Teko:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* Activa modo claro */
+@custom-variant light (&:where(.light, .light *));
+
+@theme {
+    --color-apex-onyx: #0b090a;
+    --color-apex-carbon: #161a1d;
+    --color-apex-garnet: #660708;
+    --color-apex-mahogany: #a4161a;
+    --color-apex-red-dark: #ba181b;
+    --color-apex-red: #e5383b;
+    --color-apex-silver: #b1a7a6;
+    --color-apex-grey: #d3d3d3;
+    --color-apex-smoke: #f5f3f4;
+
+    --font-display: 'Teko', sans-serif;
+    --font-body: 'Oswald', sans-serif;
+}
