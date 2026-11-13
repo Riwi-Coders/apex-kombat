@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="APEX Hall of Fame: 2025 season champions, knockout leaders and the eight season-ranked robots.">
+    <title>Hall of Fame | APEX</title>
+    <script src="./js/theme.js"></script>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="min-h-screen bg-apex-onyx font-body text-white light:bg-apex-smoke light:text-apex-onyx">
+    <header class="px-4 pt-3 md:px-8">
+        <!-- MENU -->
+        <nav
+            class="fixed top-2 left-0 right-0 z-50 flex max-w-7xl items-center justify-between border border-white/10 backdrop-blur-md bg-apex-onyx/70 px-4 py-2 mx-4 md:px-5 md:mx-auto light:bg-white/85 light:border-apex-onyx/10 light:text-apex-onyx">
+            <a href="./index.html" class="flex flex-col leading-none">
+                <span class="mb-1 text-[8px] font-semibold tracking-[2px] text-apex-silver uppercase light:text-apex-carbon/70">
+                    Presented by Monster's Cinema
+                </span>
+                <span class="text-3xl font-bold tracking-tight">
+                    APEX<span class="text-apex-red light:text-apex-mahogany">.</span>
+                </span>
+            </a>
+            <ul class="hidden items-center gap-4 text-[10px] font-medium tracking-[1.5px] text-apex-silver lg:flex light:text-apex-carbon/70">
+                <li>
+                    <a href="./athletes.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        ATHLETES
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html#fight-card" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        FIGHT CARD
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html#highlights" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        HIGHLIGHTS
+                    </a>
+                </li>
+                <li>
+                    <a href="./events.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        EVENTS & TICKETS
+                    </a>
+                </li>
+                <li>
+                    <a href="./hall-of-fame.html" aria-current="page" class="text-apex-red light:text-apex-mahogany transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        HALL OF FAME
+                    </a>
+                </li>
+                <li>
+                    <a href="./about.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        ABOUT
+                    </a>
+                </li>
+            </ul>
+            <a type="button"
+                class="login hidden h-10 w-10 shrink-0 items-center justify-center border border-white/15 text-apex-grey transition-colors hover:border-apex-red hover:text-white lg:flex light:border-apex-onyx/15 light:hover:text-apex-mahogany light:hover:border-apex-mahogany light:text-apex-carbon"
+                aria-label="login" title="login" href="./index.html#login">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"
+                    aria-hidden="true">
+                    <circle cx="16" cy="8" r="5" />
+                    <path d="M12.5 11.5 3 21H1v-4l9.5-9.5" />
+                </svg>
+            </a>
+            <a href="./index.html#buy-button"
+                class="hidden bg-apex-red px-4 py-2 text-xs font-bold transition-colors hover:bg-apex-mahogany lg:block text-white">
+                BUY TICKETS
+            </a>
+            <details class="relative lg:hidden">
+                <summary class="cursor-pointer list-none border border-white/20 px-3 py-2 text-xs font-bold light:border-apex-onyx/20 light:text-apex-onyx">
+                    MENU
+                </summary>
+                <ul
+                    class="absolute right-0 top-full z-50 mt-3 flex w-52 flex-col gap-4 border border-white/15 bg-apex-carbon p-5 text-sm font-semibold text-apex-grey shadow-xl light:border-apex-onyx/15 light:bg-white light:text-apex-carbon light:border-apex-onyx/10">
+                    <li><a href="./athletes.html" class="hover:text-white light:hover:text-apex-mahogany">ATHLETES</a></li>
+                    <li><a href="./index.html#fight-card" class="hover:text-white light:hover:text-apex-mahogany">FIGHT CARD</a></li>
+                    <li><a href="./index.html#highlights" class="hover:text-white light:hover:text-apex-mahogany">HIGHLIGHTS</a></li>
+                    <li><a href="./events.html" class="hover:text-white light:hover:text-apex-mahogany">EVENTS & TICKETS</a></li>
+                    <li><a href="./hall-of-fame.html" aria-current="page" class="text-apex-red light:text-apex-mahogany hover:text-white light:hover:text-apex-mahogany">HALL OF FAME</a></li>
+                    <li><a href="./about.html" class="hover:text-white light:hover:text-apex-mahogany">ABOUT</a></li>
+                    <li>
+                        <button type="button" class="login flex items-center gap-2 hover:text-white light:hover:text-apex-mahogany light:text-apex-carbon" aria-label="login">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="h-4 w-4" aria-hidden="true">
+                                <circle cx="16" cy="8" r="5" />
+                                <path d="M12.5 11.5 3 21H1v-4l9.5-9.5" />
+                            </svg>
+                            LOGIN
+                        </button>
+                    </li>
+                    <li>
+                        <a href="./index.html#buy-button" class="block bg-apex-red px-4 py-3 text-center text-white">
+                            BUY TICKETS
+                        </a>
+                    </li>
+                </ul>
+            </details>
+            <button
+
+                id="theme-toggle"
+
+                type="button"
+
+                class="border border-white/20 px-3 py-2 text-white light:border-apex-onyx/20 light:text-apex-onyx light:bg-apex-smoke light:hover:bg-white"
+
+                aria-label="Activar modo claro"
+
+            >
+
+                ☀️
+
+            </button>
+        </nav>
+    </header>
+    <main class="mx-auto w-full max-w-7xl px-4 pb-16 pt-28 md:px-5 md:pt-32">
+        <section aria-labelledby="hall-title">
+            <p class="text-[10px] font-semibold uppercase tracking-[3px] text-apex-red light:text-apex-mahogany">SEASON &middot; 2025</p>
+            <h1 id="hall-title" class="mt-1 font-display text-6xl font-bold uppercase leading-none tracking-wide sm:text-7xl lg:text-8xl">HALL OF FAME</h1>
+            <p class="mt-4 text-sm leading-relaxed text-apex-silver light:text-apex-carbon/70">Official APEX rankings. K.O. % is knockout wins divided by total wins.</p>
+            <div class="mt-10 grid grid-cols-1 gap-4 lg:mt-20 lg:grid-cols-3">
+                <article class="min-w-0 border border-white/15 bg-apex-carbon p-6 light:border-apex-onyx/15 light:bg-white">
+                    <h2 class="flex items-center gap-2 text-[10px] font-semibold tracking-[2px] text-apex-red light:text-apex-mahogany">
+                        <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8v5a4 4 0 0 1-8 0V3Z"/><path d="M8 5H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4M12 12v6m-4 3h8m-8-3h8"/></svg>
+                        WORLD CHAMPION
+                    </h2>
+                    <p class="mt-2 font-display text-3xl font-bold leading-none">WHITE EAGLE</p>
+                    <div class="mt-4 flex flex-wrap items-baseline gap-2 border-t border-white/15 pt-4 light:border-apex-onyx/15">
+                        <p class="font-display text-6xl font-bold leading-none text-apex-red light:text-apex-mahogany">14–1</p>
+                        <p class="text-[10px] tracking-wider text-apex-silver light:text-apex-carbon/70">RECORD</p>
+                    </div>
+                </article>
+                <article class="min-w-0 border border-white/15 bg-apex-carbon p-6 light:border-apex-onyx/15 light:bg-white">
+                    <h2 class="flex items-center gap-2 text-[10px] font-semibold tracking-[2px] text-apex-red light:text-apex-mahogany">
+                        <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 2-9 12h7l-2 8 9-12h-7l2-8Z"/></svg>
+                        MOST K.O.s
+                    </h2>
+                    <p class="mt-2 font-display text-3xl font-bold leading-none">WHITE EAGLE</p>
+                    <div class="mt-4 flex flex-wrap items-baseline gap-2 border-t border-white/15 pt-4 light:border-apex-onyx/15">
+                        <p class="font-display text-6xl font-bold leading-none text-apex-red light:text-apex-mahogany">11</p>
+                        <p class="text-[10px] tracking-wider text-apex-silver light:text-apex-carbon/70">KNOCKOUTS</p>
+                    </div>
+                </article>
+                <article class="min-w-0 border border-white/15 bg-apex-carbon p-6 light:border-apex-onyx/15 light:bg-white">
+                    <h2 class="flex items-center gap-2 text-[10px] font-semibold tracking-[2px] text-apex-red light:text-apex-mahogany">
+                        <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+                        BEST K.O. RATE
+                    </h2>
+                    <p class="mt-2 font-display text-3xl font-bold leading-none">STEEL TITAN</p>
+                    <div class="mt-4 flex flex-wrap items-baseline gap-2 border-t border-white/15 pt-4 light:border-apex-onyx/15">
+                        <p class="font-display text-6xl font-bold leading-none text-apex-red light:text-apex-mahogany">83%</p>
+                        <p class="text-[10px] tracking-wider text-apex-silver light:text-apex-carbon/70">K.O. %</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="mt-10" aria-labelledby="rankings-title">
+            <h2 id="rankings-title" class="mb-4 font-display text-4xl font-bold uppercase leading-none">SEASON RANKINGS</h2>
+            <div class="overflow-x-auto border border-white/15 focus-visible:outline-2 focus-visible:outline-apex-red light:border-apex-onyx/15" role="region" aria-labelledby="rankings-title" tabindex="0">
+                <table class="w-full min-w-[680px] border-collapse whitespace-nowrap font-display">
+                    <caption class="sr-only">2025 season rankings. W: wins; L: losses; K.O.: knockout wins; K.O. %: knockout wins divided by total wins.</caption>
+                    <thead class="bg-apex-carbon font-body text-[9px] tracking-[2px] text-apex-silver light:bg-white light:text-apex-carbon/70">
+                        <tr>
+                            <th scope="col" class="px-4 py-3 text-left"><span aria-hidden="true">#</span><span class="sr-only">Rank</span></th>
+                            <th scope="col" class="w-1/4 px-4 py-3 text-left">ROBOT</th>
+                            <th scope="col" class="w-1/4 px-4 py-3 text-left">CLASS</th>
+                            <th scope="col" class="px-4 py-3 text-center"><abbr title="Wins" class="no-underline">W</abbr></th>
+                            <th scope="col" class="px-4 py-3 text-center"><abbr title="Losses" class="no-underline">L</abbr></th>
+                            <th scope="col" class="px-4 py-3 text-center">K.O.</th>
+                            <th scope="col" class="px-4 py-3 text-right">K.O. %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t border-white/15 light:border-apex-onyx/15">
+                            <td class="px-4 py-4 text-2xl text-apex-red light:text-apex-mahogany">1</td>
+                            <th scope="row" class="px-4 py-4 text-left text-xl font-bold">WHITE EAGLE</th>
+                            <td class="px-4 py-4 font-body text-xs text-apex-silver light:text-apex-carbon/70">HEAVYWEIGHT</td>
+                            <td class="px-4 py-4 text-center text-xl">14</td>
+                            <td class="px-4 py-4 text-center text-xl">1</td>
+                            <td class="px-4 py-4 text-center text-xl">11</td>
+                            <td class="px-4 py-4 text-right"><span class="inline-block min-w-12 border border-apex-red px-2 py-1 text-lg leading-none text-apex-red light:border-apex-mahogany light:text-apex-mahogany">79%</span></td>
+                        </tr>
+                        <tr class="border-t border-white/15 light:border-apex-onyx/15">
+                            <td class="px-4 py-4 text-2xl text-apex-red light:text-apex-mahogany">2</td>
+                            <th scope="row" class="px-4 py-4 text-left text-xl font-bold">RED FALCON</th>
+                            <td class="px-4 py-4 font-body text-xs text-apex-silver light:text-apex-carbon/70">MIDDLEWEIGHT</td>
+                            <td class="px-4 py-4 text-center text-xl">9</td>
+                            <td class="px-4 py-4 text-center text-xl">0</td>
+                            <td class="px-4 py-4 text-center text-xl">6</td>
+                            <td class="px-4 py-4 text-right"><span class="inline-block min-w-12 border border-apex-red px-2 py-1 text-lg leading-none text-apex-red light:border-apex-mahogany light:text-apex-mahogany">67%</span></td>
+                        </tr>
+                        <tr class="border-t border-white/15 light:border-apex-onyx/15">
+                            <td class="px-4 py-4 text-2xl text-apex-red light:text-apex-mahogany">3</td>
+                            <th scope="row" class="px-4 py-4 text-left text-xl font-bold">STEEL TITAN</th>
+                            <td class="px-4 py-4 font-body text-xs text-apex-silver light:text-apex-carbon/70">SUPER HEAVYWEIGHT</td>
+                            <td class="px-4 py-4 text-center text-xl">12</td>
+                            <td class="px-4 py-4 text-center text-xl">2</td>
+                            <td class="px-4 py-4 text-center text-xl">10</td>
+                            <td class="px-4 py-4 text-right"><span class="inline-block min-w-12 border border-apex-red px-2 py-1 text-lg leading-none text-apex-red light:border-apex-mahogany light:text-apex-mahogany">83%</span></td>
+                        </tr>
+                        <tr class="border-t border-white/15 light:border-apex-onyx/15">
+                            <td class="px-4 py-4 text-2xl text-apex-silver light:text-apex-carbon/70">4</td>
+                            <th scope="row" class="px-4 py-4 text-left text-xl font-bold">IRON WRAITH</th>
+                            <td class="px-4 py-4 font-body text-xs text-apex-silver light:text-apex-carbon/70">HEAVYWEIGHT</td>
+                            <td class="px-4 py-4 text-center text-xl">10</td>
+                            <td class="px-4 py-4 text-center text-xl">4</td>
+                            <td class="px-4 py-4 text-center text-xl">7</td>
+                            <td class="px-4 py-4 text-right"><span class="inline-block min-w-12 border border-apex-red px-2 py-1 text-lg leading-none text-apex-red light:border-apex-mahogany light:text-apex-mahogany">70%</span></td>
+                        </tr>
+                        <tr class="border-t border-white/15 light:border-apex-onyx/15">
+                            <td class="px-4 py-4 text-2xl text-apex-silver light:text-apex-carbon/70">5</td>
+                            <th scope="row" class="px-4 py-4 text-left text-xl font-bold">BLACK KESTREL</th>
+                            <td class="px-4 py-4 font-body text-xs text-apex-silver light:text-apex-carbon/70">MIDDLEWEIGHT</td>
+                            <td class="px-4 py-4 text-center text-xl">8</td>
+                            <td class="px-4 py-4 text-center text-xl">3</td>
+                            <td class="px-4 py-4 text-center text-xl">4</td>
+                            <td class="px-4 py-4 text-right"><span class="inline-block min-w-12 border border-apex-red px-2 py-1 text-lg leading-none text-apex-red light:border-apex-mahogany light:text-apex-mahogany">50%</span></td>
+                        </tr>
+                        <tr class="border-t border-white/15 light:border-apex-onyx/15">
+                            <td class="px-4 py-4 text-2xl text-apex-silver light:text-apex-carbon/70">6</td>
+                            <th scope="row" class="px-4 py-4 text-left text-xl font-bold">VOLT RONIN</th>
+                            <td class="px-4 py-4 font-body text-xs text-apex-silver light:text-apex-carbon/70">LIGHTWEIGHT</td>
+                            <td class="px-4 py-4 text-center text-xl">7</td>
+                            <td class="px-4 py-4 text-center text-xl">3</td>
+                            <td class="px-4 py-4 text-center text-xl">3</td>
+                            <td class="px-4 py-4 text-right"><span class="inline-block min-w-12 border border-apex-red px-2 py-1 text-lg leading-none text-apex-red light:border-apex-mahogany light:text-apex-mahogany">43%</span></td>
+                        </tr>
+                        <tr class="border-t border-white/15 light:border-apex-onyx/15">
+                            <td class="px-4 py-4 text-2xl text-apex-silver light:text-apex-carbon/70">7</td>
+                            <th scope="row" class="px-4 py-4 text-left text-xl font-bold">GRANITE OX</th>
+                            <td class="px-4 py-4 font-body text-xs text-apex-silver light:text-apex-carbon/70">SUPER HEAVYWEIGHT</td>
+                            <td class="px-4 py-4 text-center text-xl">6</td>
+                            <td class="px-4 py-4 text-center text-xl">5</td>
+                            <td class="px-4 py-4 text-center text-xl">5</td>
+                            <td class="px-4 py-4 text-right"><span class="inline-block min-w-12 border border-apex-red px-2 py-1 text-lg leading-none text-apex-red light:border-apex-mahogany light:text-apex-mahogany">83%</span></td>
+                        </tr>
+                        <tr class="border-t border-white/15 light:border-apex-onyx/15">
+                            <td class="px-4 py-4 text-2xl text-apex-silver light:text-apex-carbon/70">8</td>
+                            <th scope="row" class="px-4 py-4 text-left text-xl font-bold">SILVER MANTIS</th>
+                            <td class="px-4 py-4 font-body text-xs text-apex-silver light:text-apex-carbon/70">LIGHTWEIGHT</td>
+                            <td class="px-4 py-4 text-center text-xl">5</td>
+                            <td class="px-4 py-4 text-center text-xl">4</td>
+                            <td class="px-4 py-4 text-center text-xl">2</td>
+                            <td class="px-4 py-4 text-right"><span class="inline-block min-w-12 border border-apex-red px-2 py-1 text-lg leading-none text-apex-red light:border-apex-mahogany light:text-apex-mahogany">40%</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="border-t border-white/10 bg-apex-carbon light:border-apex-onyx/10 light:bg-white">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-12 md:grid-cols-2 md:gap-16 md:px-5">
+            <!-- Marca -->
+            <div>
+                <a href="./index.html" class="inline-block text-3xl font-bold tracking-tight">
+                    APEX<span class="text-apex-red light:text-apex-mahogany">.</span>
+                </a>
+                <p class="mt-2 max-w-xs text-sm leading-relaxed text-apex-silver light:text-apex-carbon/70">
+                    Real humanoid engineering. Real knockouts.
+                    Patrocinated by Monster's Cinema.
+                </p>
+                <!-- Redes sociales -->
+                <div class="mt-5 flex gap-3">
+                    <a href="#" aria-label="Instagram"
+                        class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-apex-grey transition-colors hover:border-apex-red hover:text-white light:border-apex-onyx/15 light:text-apex-carbon/80 light:hover:text-apex-mahogany light:hover:border-apex-mahogany">
+                        IG
+                    </a>
+                    <a href="#" aria-label="YouTube"
+                        class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-apex-grey transition-colors hover:border-apex-red hover:text-white light:border-apex-onyx/15 light:text-apex-carbon/80 light:hover:text-apex-mahogany light:hover:border-apex-mahogany">
+                        YT
+                    </a>
+                    <a href="#" aria-label="X"
+                        class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-apex-grey transition-colors hover:border-apex-red hover:text-white light:border-apex-onyx/15 light:text-apex-carbon/80 light:hover:text-apex-mahogany light:hover:border-apex-mahogany">
+                        X
+                    </a>
+                </div>
+            </div>
+            <!-- Suscripcion -->
+            <div>
+                <h2 class="font-display text-xl font-bold uppercase">
+                    GET FIGHT ALERTS
+                </h2>
+                <p class="mt-1 text-xs text-apex-silver light:text-apex-carbon/70">
+                    Presale codes, weigh-in streams and K.O. clips first.
+                </p>
+                <form class="mt-4 flex flex-col gap-2 sm:flex-row">
+                    <label for="email-alerts" class="sr-only">
+                        Email address
+                    </label>
+                    <input id="email-alerts" type="email" name="email" placeholder="you@email.com" autocomplete="email"
+                        required
+                        class="min-w-0 flex-1 border border-white/15 bg-apex-onyx px-3 py-3 text-sm text-white outline-none focus:border-apex-red light:border-apex-onyx/15 light:bg-apex-smoke light:text-apex-onyx light:placeholder:text-apex-carbon/60">
+                    <button type="submit"
+                        class="bg-apex-red px-6 py-3 text-sm font-bold uppercase transition-colors hover:bg-apex-mahogany text-white">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="border-t border-white/10 light:border-apex-onyx/10">
+            <div class="mx-auto max-w-7xl px-4 py-5 text-xs text-apex-silver md:px-5 light:text-apex-carbon/70">
+                &copy 2026 APEX Combat League. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
