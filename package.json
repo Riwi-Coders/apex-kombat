@@ -1,8 +1,7 @@
-
 {
   "name": "apex-kombat",
   "version": "1.0.0",
-  "description": "**Real Humanoid Combat League**",
+  "description": "El primer campeonato real de combate humanoide.",
   "main": "index.js",
   "scripts": {
     "dev": "tailwindcss -i ./css/input.css -o ./src/output.css --watch",
