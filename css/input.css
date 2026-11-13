@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+@custom-variant light (&:where(.light, .light *));
+
 @theme {
     --color-apex-onyx: #0b090a;
     --color-apex-carbon: #161a1d;
@@ -15,4 +17,4 @@
 
     --font-display: 'Teko', sans-serif;
     --font-body: 'Oswald', sans-serif;
-};
+}
