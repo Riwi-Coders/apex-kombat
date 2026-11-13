@@ -20,17 +20,17 @@
             </a>
             <ul class="hidden items-center gap-4 text-[10px] font-medium tracking-[1.5px] text-apex-silver lg:flex light:text-apex-carbon/70">
                 <li>
-                    <a href="#athletes" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                    <a href="./athletes.html" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
                         ATHLETES
                     </a>
                 </li>
                 <li>
-                    <a href="#fight-card" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                    <a href="./index.html#fight-card" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
                         FIGHT CARD
                     </a>
                 </li>
                 <li>
-                    <a href="#highlights" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                    <a href="./index.html#highlights" class="transition-colors text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
                         HIGHLIGHTS
                     </a>
                 </li>
@@ -52,7 +52,7 @@
             </ul>
             <a type="button"
                 class="login hidden h-10 w-10 shrink-0 items-center justify-center border border-white/15 text-apex-grey transition-colors hover:border-apex-red hover:text-white lg:flex light:border-apex-onyx/15 light:hover:text-apex-mahogany light:hover:border-apex-mahogany light:text-apex-carbon"
-                aria-label="login" title="login" href="#login">
+                aria-label="login" title="login" href="./login">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"
                     aria-hidden="true">
@@ -70,10 +70,10 @@
                 </summary>
                 <ul
                     class="absolute right-0 top-full z-50 mt-3 flex w-52 flex-col gap-4 border border-white/15 bg-apex-carbon p-5 text-sm font-semibold text-apex-grey shadow-xl light:border-apex-onyx/15 light:bg-white light:text-apex-carbon ">
-                    <li><a href="#athletes" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">ATHLETES</a></li>
-                    <li><a href="#fight-card" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">FIGHT CARD</a></li>
-                    <li><a href="#highlights" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">HIGHLIGHTS</a></li>
-                    <li><a href="#tickets" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">EVENTS & TICKETS</a></li>
+                    <li><a href="./athletes.html" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">ATHLETES</a></li>
+                    <li><a href="./index.html#fight-card" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">FIGHT CARD</a></li>
+                    <li><a href="./index.html#highlights" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">HIGHLIGHTS</a></li>
+                    <li><a href="./events.html" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">EVENTS & TICKETS</a></li>
                     <li><a href="./hall-of-fame.html" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">HALL OF FAME</a></li>
                     <li><a href="./about.html" class="text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">ABOUT</a></li>
                     <li>
@@ -88,7 +88,7 @@
                         </button>
                     </li>
                     <li>
-                        <a href="#" class="block bg-apex-red px-4 py-3 text-center text-white">
+                        <a href="./events.html" class="block bg-apex-red px-4 py-3 text-center text-white">
                             BUY TICKETS
                         </a>
                     </li>
@@ -117,7 +117,7 @@
 
                 <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
                     <div class="lg:col-span-2 relative overflow-hidden border border-apex-silver/30 flex flex-col">
-                        <img src="./img/robot-white.jpeg" alt="White Eagle" id="robot-img" class="object-cover w-full">
+                        <img src="./img/white-eagle.jpeg" alt="White Eagle" id="robot-img" class="object-cover w-full">
                         <div class="bg-apex-carbon/15 p-6 flex flex-col flex-1 justify-end ">
                             <p id="robot-code" class="text-apex-red text-xs tracking-[0.2em] uppercase light:text-apex-mahogany">T800-WE01 · HEAVYWEIGHT</p>
                             <h2 id="robot-name" class="text-white text-5xl font-bold uppercase light:text-apex-onyx">WHITE EAGLE</h2>
@@ -326,47 +326,6 @@
             <div class="mx-auto max-w-6xl px-4 py-5 text-xs text-apex-silver md:px-5 light:text-apex-carbon/70">© 2026 APEX Combat League. All rights reserved.</div>
         </div>
     </footer>
-
-    <script>
-        const robots = {
-            "white-eagle": { name: "WHITE EAGLE", code: "T800-WE01 · HEAVYWEIGHT", weight: "78 kg", torque: "450 Nm", type: "Planetary BLDC + harmonic drive", record: "11 KO · 14-1-0", velocity: "9.4 m/s", DoF: "31 DoF", img: "./img/robot-white.jpeg"},
-            "steel-titan": { name: "STEEL TITAN", code: "T800-ST03 · Super Heavyweight", weight: "92 kg", torque: "520 Nm", type: "Hydraulic linear (hip/knee)", record: "10 KO · 12-2-0", velocity: "8.1 m/s", DoF: "29 DoF", img: "./img/robot-steel.jpeg"},
-            "red-falcon":  { name: "RED FALCON",  code: "T800-RF07 · Middleweight", weight: "64 kg", torque: "380 Nm", type: "Quasi-direct drive BLDC", record: "6 KO · 9-0-0", velocity: "10.6 m/s", DoF: "33 DoF", img: "./img/robot-red.jpeg"},
-        };
-
-        const tabs = document.querySelectorAll(".tab");
-
-        tabs.forEach(function (boton) {
-            boton.addEventListener("click", function () {
-                const datos = robots[boton.dataset.robot];
-
-                document.getElementById("robot-name").textContent = datos.name;
-                document.getElementById("robot-code").textContent = datos.code;
-                document.getElementById("robot-code").classList.add("pt-1");
-                document.getElementById("stat-weight").textContent = datos.weight;
-                document.getElementById("stat-torque").textContent = datos.torque;
-                document.getElementById("stat-type").textContent = datos.type;
-                document.getElementById("stat-record").textContent = datos.record;
-                document.getElementById("stat-velocity").textContent = datos.velocity;
-                document.getElementById("stat-DoF").textContent = datos.DoF;
-                document.getElementById("robot-img").src = datos.img;
-
-                tabs.forEach(function (t) {
-                    t.classList.remove("bg-apex-red", "border-apex-garnet", "text-apex-silver");
-                    t.classList.add("border-apex-silver", "text-apex-silver", "hover:text-white", "transition", "duration-300", "ease-in-out");
-                });
-
-                boton.classList.remove("border-apex-silver", "text-apex-silver", "hover:text-white", "transition", "duration-300", "ease-in-out");
-                boton.classList.add("bg-apex-red", "border-apex-garnet", "text-white");
-            });
-        });
-
-        const toggle = document.getElementById('theme-toggle');
-        toggle.addEventListener('click', () => {
-            const isLight = document.documentElement.classList.toggle('light');
-            toggle.textContent = isLight ? '🌙' : '☀️';
-            toggle.setAttribute('aria-label', isLight ? 'Activar modo oscuro' : 'Activar modo claro');
-        });
-    </script>
+    <script src="./js/athletes.js"></script>
 </body>
 </html>
