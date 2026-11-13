@@ -1,139 +1,96 @@
 # APEX
 
-> El primer campeonato real de combate humanoide.
+**Real Humanoid Combat League**
 
-![Built with Lovable](https://img.shields.io/badge/built%20with-Lovable-ff69b4)
-![HTML5](https://img.shields.io/badge/HTML5-e34f26)
-![CSS3](https://img.shields.io/badge/CSS3-1572b6)
-![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38bdf8)
+APEX es una plataforma web de un campeonato ficticio de combate entre robots humanoides, inspirada en la presentación de eventos deportivos profesionales como las artes marciales mixtas (MMA).
 
-## Sobre Apex
+El proyecto busca ofrecer una experiencia visual moderna en la que los usuarios puedan conocer a los atletas robóticos, consultar sus estadísticas, explorar eventos y ver los momentos destacados de los combates.
 
-**Apex** es la plataforma oficial de un campeonato de combate entre robots humanoides reales. La web está enfocada en **eventos y boletería**: permite comprar entradas, conocer a los peleadores y revivir los mejores momentos de cada pelea.
+## Características
 
-La propuesta visual combina la fotografía deportiva comercial (estilo UFC) con la tecnología industrial contemporánea (estilo Boston Dynamics / EngineAI). Los robots se presentan como productos de ingeniería que existen hoy, no como personajes de videojuego.
+- **Eventos y boletería:** información de próximos combates y selector interactivo de entradas.
+- **Atletas T800:** fichas técnicas con estadísticas y características de cada robot.
+- **Telemetría:** ventanas modales con información detallada de los atletas.
+- **Highlights:** galería de repeticiones y momentos destacados.
+- **Diseño responsive:** interfaz adaptable a dispositivos móviles, tablets y computadores.
 
-## Secciones
+## Identidad visual
 
-### Header
-- Logo tipo marca deportiva a la izquierda.
-- Menú sutil: **Cartelera**, **Replays**, **Atletas T800**, **Boletería**.
-- CTA primario en rojo: **COMPRAR BOLETAS**.
+### Logo
 
-### Hero (venta de entradas)
-- Fotografía de estudio/arena de un humanoide blanco estilo T800 en guardia de combate de MMA, con iluminación cenital dramática.
-- Titular: *"EL PRIMER CAMPEONATO REAL DE COMBATE HUMANOIDE"*.
-- Módulo de compra directa: fecha del próximo evento en vivo, ciudad/arena, selector de zonas (**Ring Side**, **Preferencial**, **General**) con precio claro y botón CTA rojo.
+![Logo de APEX](./img/logo.png)
 
-### Peleadores
-- Grid de 3 tarjetas tipo ficha técnica industrial del modelo **T800 "White Eagle"** y sus variantes.
-- Fotos en escala de grises/blanco tomadas en el pesaje oficial.
-- Datos reales por unidad: peso (kg), torque de articulación (Nm), tipo de actuador y récord de K.O.
-
-### Replays y highlights
-- Grid estilo plataforma deportiva (DAZN) con miniaturas de intercambios de golpes, derribos y K.O. técnicos.
-- Tarjetas oscuras con borde sutil `#1E2229` y contador de duración del video.
-
-## Dirección de arte
-
-### Estética del robot
-Chasis compacto con panelería exterior de polímero técnico blanco ("White Eagle"), articulaciones y servomotores expuestos en gris titanio, y estructura en fibra de carbono y aluminio.
-**Sin** pantallas holográficas, láseres ni luces de neón en el cuerpo.
+El logotipo de APEX utiliza una composición tipográfica de alto impacto, con letras blancas sobre fondo oscuro y un punto rojo que refuerza la identidad de la marca.
 
 ### Paleta de colores
 
-| Uso | Color | Hex |
-| --- | --- | --- |
-| Fondo principal | Negro Carbón | `#0D0D0D` |
-| Contenedores de interfaz | Gris Acero | `#1E2229` |
-| Texto secundario | Gris Platino | `#E0E6ED` |
-| Texto principal | Blanco | `#FFFFFF` |
-| Acción / urgencia | Rojo | `#FF1801` |
+La identidad visual combina tonos oscuros, rojos intensos y grises neutros.
 
-> **Regla del rojo:** se reserva **exclusivamente** para llamados a la acción de compra ("BUY TICKETS"), etiquetas de **LIVE** y marcadores de **K.O.** No se usa como decoración.
+| Color | Código HEX | Aplicación |
+|---|---|---|
+| Negro principal | `#0B090A` | Fondo general |
+| Gris oscuro | `#161A1D` | Tarjetas y contenedores |
+| Rojo profundo | `#660708` | Superficies y detalles |
+| Rojo oscuro | `#A4161A` | Estados y elementos secundarios |
+| Rojo medio | `#BA181B` | Acentos |
+| Rojo principal | `#E5383B` | Botones y elementos destacados |
+| Gris cálido | `#B1A7A6` | Textos secundarios |
+| Gris claro | `#D3D3D3` | Bordes y elementos neutros |
+| Blanco suave | `#F5F3F4` | Textos y títulos |
+| Blanco | `#FFFFFF` | Contraste y elementos principales |
 
-### Tipografía
-- **Teko (Bold):** titulares condensados y agresivos.
-- **Rajdhani:** textos técnicos y datos.
+[Ver paleta completa en Coolors](https://coolors.co/palette/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff)
 
-### Restricciones visuales (anti-cliché)
-- El robot debe verse como un producto de ingeniería real, no como un personaje de ficción.
-- Márgenes y espaciados muy amplios, propios de una plataforma de eventos de gama alta.
+### Concepto visual
 
-## Stack tecnológico
+APEX combina la estética de las competiciones deportivas profesionales con elementos de ingeniería robótica.
 
-Sitio estático, sin frameworks de JavaScript:
+Su diseño utiliza fondos oscuros, tipografía de alto impacto, fotografía de combate y componentes de interfaz inspirados en plataformas deportivas.
 
-- **HTML5** para la estructura
-- **CSS3** para estilos propios mínimos
-- **[Tailwind CSS](https://tailwindcss.com/)** para el sistema de diseño (paleta y tipografías de Apex definidas como tokens)
+## Diseño de interfaz
 
-## Instalación y uso local
+### Wireframe
 
-Requisitos: Node.js 18+ y npm (solo para compilar Tailwind).
+El wireframe presenta la estructura inicial y la distribución de las secciones principales de la plataforma.
 
-```bash
-git clone https://github.com/<tu-usuario>/apex.git
-cd apex
-npm install
-npm run dev     # compila Tailwind en modo watch
-```
+[Ver wireframe de APEX](https://lovable.dev/preview/WtDCgMQ5gBOEs1HAdO0EOEPhhEec6xHv)
 
-Abre `index.html` en el navegador (o con la extensión Live Server de VS Code).
+### Mockup
 
-| Comando         | Descripción                                   |
-| --------------- | --------------------------------------------- |
-| `npm run dev`   | Compila `src/input.css` en modo watch         |
-| `npm run build` | Genera `dist/output.css` minificado           |
+El mockup representa la propuesta visual del sitio, incluyendo colores, tipografía, imágenes y componentes de interfaz.
 
-## Tema de Tailwind
+[Ver mockup de APEX](https://lovable.dev/preview/YRBFY5Wx8lAQzn7GWaEzDylYMrFx0bwz)
 
-Los colores y tipografías de la dirección de arte viven en `src/input.css`:
+## Tecnologías
 
-```css
-@import "tailwindcss";
+- **HTML5:** estructura semántica del sitio.
+- **Tailwind CSS:** estilos y diseño responsive.
+- **JavaScript:** interactividad y funcionalidades de la interfaz.
+- **Git y GitHub:** control de versiones y colaboración.
 
-@theme {
-  --color-carbon: #0D0D0D;
-  --color-steel: #1E2229;
-  --color-platinum: #E0E6ED;
-  --color-apex-red: #FF1801;
+## Ejecución local
 
-  --font-display: "Teko", sans-serif;
-  --font-tech: "Rajdhani", sans-serif;
-}
-```
+1. Clonar el repositorio.
+2. Abrir el proyecto en Visual Studio Code.
+3. Ejecutar `index.html` con Live Server o abrirlo directamente en el navegador.
 
-Así puedes usar clases como `bg-carbon`, `text-platinum`, `bg-apex-red` o `font-display` en el HTML.
+El prototipo utiliza Tailwind CSS mediante Play CDN, por lo que no requiere instalar dependencias para visualizarse.
 
-## Estructura
+## Organización del proyecto
 
-```
-apex/
-├── index.html
-├── src/
-│   └── input.css      # Tailwind + tema de Apex
-├── dist/
-│   └── output.css     # CSS generado (no editar)
-├── assets/            # Imágenes y videos
-└── package.json
-```
+El desarrollo se divide en ramas para trabajar las diferentes funcionalidades:
 
-## Hoja de ruta
+- `dev`: integración de cambios.
+- `feature/index`: página principal.
+- `feature/events`: eventos y boletería.
+- `feature/athletes`: atletas y estadísticas.
 
-- [ ] Hero con módulo de compra de entradas
-- [ ] Fichas técnicas de peleadores T800
-- [ ] Grid de replays y highlights
-- [ ] Integración de pasarela de pago para boletería
-- [ ] Marcadores LIVE en tiempo real
+## Estado
 
-## Contribuir
+**En desarrollo.**
 
-1. Haz un fork del repositorio.
-2. Crea una rama: `git checkout -b feature/mi-mejora`.
-3. Haz commit: `git commit -m "feat: describe tu cambio"`.
-4. Sube la rama y abre un Pull Request.
+Las funcionalidades se están implementando progresivamente. La compra de entradas y las reproducciones de video son parte de una interfaz demostrativa y no representan transacciones o transmisiones reales.
 
-## Licencia
+## Equipo
 
-Distribuido bajo licencia MIT. Consulta el archivo `LICENSE`.
+Proyecto desarrollado colaborativamente durante el proceso de formación en desarrollo de software.
