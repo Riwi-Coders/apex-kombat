@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX | Real Humanoid Combat League</title>
+    <script src="./js/theme.js"></script>
+    <link rel="stylesheet" href="./src/output.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen overflow-x-hidden bg-apex-onyx text-white light:bg-apex-smoke light:text-apex-onyx font-body">
+    <header class="px-4 pt-3 md:px-8">
+        <!-- MENU -->
+        <nav
+            class="fixed top-2 left-0 right-0 z-50 flex max-w-7xl items-center justify-between border border-white/10 backdrop-blur-md bg-apex-onyx/70 px-4 py-2 mx-4 md:px-5 md:mx-auto light:bg-white/85 light:border-apex-onyx/10 light:text-apex-onyx">
+            <a href="#" class="flex flex-col leading-none">
+                <span class="mb-1 text-[8px] font-semibold tracking-[2px] text-apex-silver uppercase light:text-apex-carbon/70">
+                    Presented by Monster's Cinema
+                </span>
+                <span class="text-3xl font-bold tracking-tight">
+                    APEX<span class="text-apex-red light:text-apex-mahogany">.</span>
+                </span>
+            </a>
+            <ul class="hidden items-center gap-4 text-[10px] font-medium tracking-[1.5px] text-apex-silver lg:flex light:text-apex-carbon/70">
+                <li>
+                    <a href="./athletes.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        ATHLETES
+                    </a>
+                </li>
+                <li>
+                    <a href="#fight-card" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        FIGHT CARD
+                    </a>
+                </li>
+                <li>
+                    <a href="#highlights" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        HIGHLIGHTS
+                    </a>
+                </li>
+                <li>
+                    <a href="./events.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        EVENTS & TICKETS
+                    </a>
+                </li>
+                <li>
+                    <a href="./hall-of-fame.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        HALL OF FAME
+                    </a>
+                </li>
+                <li>
+                    <a href="./about.html" class="transition-colors hover:text-white light:hover:text-apex-mahogany">
+                        ABOUT
+                    </a>
+                </li>
+            </ul>
+            <a type="button"
+                class="login hidden h-10 w-10 shrink-0 items-center justify-center border border-white/15 text-apex-grey transition-colors hover:border-apex-red hover:text-white lg:flex light:border-apex-onyx/15 light:hover:text-apex-mahogany light:hover:border-apex-mahogany light:text-apex-carbon"
+                aria-label="login" title="login" href="#login">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"
+                    aria-hidden="true">
+                    <circle cx="16" cy="8" r="5" />
+                    <path d="M12.5 11.5 3 21H1v-4l9.5-9.5" />
+                </svg>
+            </a>
+            <a href="./events.html"
+                class="hidden bg-apex-red px-4 py-2 text-xs font-bold transition-colors hover:bg-apex-mahogany lg:block text-white">
+                BUY TICKETS
+            </a>
+            <details class="relative lg:hidden">
+                <summary class="cursor-pointer list-none border border-white/20 px-3 py-2 text-xs font-bold light:border-apex-onyx/20 light:text-apex-onyx">
+                    MENU
+                </summary>
+                <ul
+                    class="absolute right-0 top-full z-50 mt-3 flex w-52 flex-col gap-4 border border-white/15 bg-apex-carbon p-5 text-sm font-semibold text-apex-grey shadow-xl light:border-apex-onyx/15 light:bg-white light:text-apex-carbon light:border-apex-onyx/10">
+                    <li><a href="./athletes.html" class="hover:text-white light:hover:text-apex-mahogany">ATHLETES</a></li>
+                    <li><a href="#fight-card" class="hover:text-white light:hover:text-apex-mahogany">FIGHT CARD</a></li>
+                    <li><a href="#highlights" class="hover:text-white light:hover:text-apex-mahogany">HIGHLIGHTS</a></li>
+                    <li><a href="./events.html" class="hover:text-white light:hover:text-apex-mahogany">EVENTS & TICKETS</a></li>
+                    <li><a href="./hall-of-fame.html" class="hover:text-white light:hover:text-apex-mahogany">HALL OF FAME</a></li>
+                    <li><a href="./about.html" class="hover:text-white light:hover:text-apex-mahogany">ABOUT</a></li>
+                    <li>
+                        <button type="button" class="login flex items-center gap-2 hover:text-white light:hover:text-apex-mahogany light:text-apex-carbon" aria-label="login">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="h-4 w-4" aria-hidden="true">
+                                <circle cx="16" cy="8" r="5" />
+                                <path d="M12.5 11.5 3 21H1v-4l9.5-9.5" />
+                            </svg>
+                            LOGIN
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#" class="block bg-apex-red px-4 py-3 text-center text-white">
+                            BUY TICKETS
+                        </a>
+                    </li>
+                </ul>
+            </details>
+            <button
+
+                id="theme-toggle"
+
+                type="button"
+
+                class="border border-white/20 px-3 py-2 text-white light:border-apex-onyx/20 light:text-apex-onyx light:bg-apex-smoke light:hover:bg-white"
+
+                aria-label="Activar modo claro"
+
+            >
+
+                ☀️
+
+            </button>
+        </nav>
+    </header>
+    <main class="w-full max-w-7xl mx-auto px-4 mt-15">
+        <section class="relative mx-auto max-w-7xl px-4 pb-10 pt-6 md:px-5 md:pt-6">
+            <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-12">
+                <div class="flex flex-col">
+                    <div class="mb-4">
+                        <span
+                            class="inline-flex items-center gap-2 bg-apex-red px-2 py-1 text-[9px] font-bold tracking-wider text-white">
+                            <span class="h-1.5 w-1.5 rounded-full bg-white"></span>
+                            APEX 08 - ON SALE NOW
+                        </span>
+                    </div>
+                    <div
+                        class="mb-5 inline-flex w-fit flex-wrap border border-white/10 bg-apex-carbon/80 px-3 py-2 text-[8px] font-semibold tracking-[1.5px] text-apex-grey light:border-apex-onyx/10 light:text-apex-carbon/80 light:bg-white/95">
+                        OFFICIAL HOST & PRESENTING SPONSOR:
+                        <span class="ml-1 text-apex-red light:text-apex-mahogany">
+                            MONSTER'S CINEMA DRIVER-IN ARENA
+                        </span>
+                    </div>
+                    <h1 class="font-display text-6xl font-bold uppercase leading-[1.2] tracking-tight sm:text-7xl md:text-8xl">
+                        <span class="block">Real</span>
+                        <span class="block">Humanoid</span>
+                        <span class="block text-apex-red light:text-apex-mahogany">Combat</span>
+                        <span class="block">League</span>
+                    </h1>
+                    <div
+                        class="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3 text-[10px] tracking-wider text-apex-silver light:text-apex-carbon/70">
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm text-apex-red light:text-apex-mahogany">▣</span>
+                            <span>SAT, DEC 12 · 8PM ET</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm text-apex-red light:text-apex-mahogany">⌖</span>
+                            <span>BARCLAYS CENTER, BROOKLYN NY</span>
+                        </div>
+                    </div>
+                    <div class="mt-5 flex gap-2">
+                        <div
+                            class="flex h-14 w-[62px] flex-col items-center justify-center border border-white/10 bg-apex-carbon light:border-apex-onyx/10 light:bg-white">
+                            <span class="text-2xl font-bold leading-none">36</span>
+                            <span class="mt-1 text-[7px] tracking-widest text-apex-silver light:text-apex-carbon/70">DAYS</span>
+                        </div>
+                        <div
+                            class="flex h-14 w-[62px] flex-col items-center justify-center border border-white/10 bg-apex-carbon light:border-apex-onyx/10 light:bg-white">
+                            <span class="text-2xl font-bold leading-none">13</span>
+                            <span class="mt-1 text-[7px] tracking-widest text-apex-silver light:text-apex-carbon/70">HRS</span>
+                        </div>
+                        <div
+                            class="flex h-14 w-[62px] flex-col items-center justify-center border border-white/10 bg-apex-carbon light:border-apex-onyx/10 light:bg-white">
+                            <span class="text-2xl font-bold leading-none">19</span>
+                            <span class="mt-1 text-[7px] tracking-widest text-apex-silver light:text-apex-carbon/70">MIN</span>
+                        </div>
+                        <div
+                            class="flex h-14 w-[62px] flex-col items-center justify-center border border-white/10 bg-apex-carbon light:border-apex-onyx/10 light:bg-white">
+                            <span class="text-2xl font-bold leading-none">38</span>
+                            <span class="mt-1 text-[7px] tracking-widest text-apex-silver light:text-apex-carbon/70">SEC</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 border border-white/10 bg-apex-carbon p-4 sm:p-5 light:border-apex-onyx/10 light:bg-white">
+                        <div class="mb-4 flex items-center justify-between">
+                            <h2 class="font-display text-base font-bold uppercase">
+                                Quick Ticket Selector
+                            </h2>
+                            <span class="text-lg text-apex-red light:text-apex-mahogany">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6 text-apex-red hover:text-red-700 transition-colors light:text-apex-mahogany">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-12v.75m0 3v.75m0 3v.75m0 3V18M3 16.5v-2.25A2.25 2.25 0 0 0 5.25 12 2.25 2.25 0 0 0 3 9.75V7.5A2.25 2.25 0 0 1 5.25 5.25h13.5A2.25 2.25 0 0 1 21 7.5v2.25A2.25 2.25 0 0 0 18.75 12 2.25 2.25 0 0 0 21 14.25v2.25A2.25 2.25 0 0 1 18.75 18.75H5.25A2.25 2.25 0 0 1 3 16.5Z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-1.5">
+                            <button type="button" data-ticket="ringside" data-price="150" aria-pressed="false"
+                                class="ticket-option border border-white/10 bg-transparent p-2 text-left transition-colors hover:border-apex-red light:border-apex-onyx/10 group light:bg-apex-smoke light:text-apex-onyx light:aria-pressed:bg-apex-garnet light:aria-pressed:text-white light:aria-pressed:border-apex-red">
+                                <span class="block text-[8px] font-semibold tracking-widest text-apex-silver light:text-apex-carbon/70 light:group-aria-pressed:text-apex-smoke">
+                                    RINGSIDE
+                                </span>
+                                <span class="mt-1 block text-xl font-bold">
+                                    $150
+                                </span>
+                            </button>
+                            <button type="button" data-ticket="vip" data-price="100" aria-pressed="true"
+                                class="ticket-option border border-apex-red bg-apex-garnet p-2 text-left transition-colors group light:bg-apex-smoke light:text-apex-onyx light:aria-pressed:bg-apex-garnet light:aria-pressed:text-white light:aria-pressed:border-apex-red text-white">
+                                <span class="block text-[8px] font-semibold tracking-widest text-apex-grey light:text-apex-carbon/80 light:group-aria-pressed:text-apex-smoke">
+                                    VIP
+                                </span>
+                                <span class="mt-1 block text-xl font-bold">
+                                    $100
+                                </span>
+                            </button>
+                            <button type="button" data-ticket="general" data-price="50" aria-pressed="false"
+                                class="ticket-option border border-white/10 bg-transparent p-2 text-left transition-colors hover:border-apex-red light:border-apex-onyx/10 group light:bg-apex-smoke light:text-apex-onyx light:aria-pressed:bg-apex-garnet light:aria-pressed:text-white light:aria-pressed:border-apex-red">
+                                <span class="block text-[8px] font-semibold tracking-widest text-apex-silver light:text-apex-carbon/70 light:group-aria-pressed:text-apex-smoke">
+                                    GENERAL
+                                </span>
+                                <span class="mt-1 block text-xl font-bold">
+                                    $50
+                                </span>
+                            </button>
+                        </div>
+                        <div class="mt-3 flex items-center justify-between">
+                            <span id="ticket-description" class="text-[10px] text-apex-silver light:text-apex-carbon/70">
+                                Lounge + paddock tour
+                            </span>
+                            <div class="flex items-center gap-3">
+                                <button id="decrease" type="button" aria-label="Decrease ticket quantity"
+                                    class="flex h-7 w-7 items-center justify-center border border-white/10 text-apex-silver transition-colors hover:border-apex-red hover:text-white light:border-apex-onyx/10 light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                                    -
+                                </button>
+                                <span id="quantity" class="text-xs font-bold">
+                                    2
+                                </span>
+                                <button id="increase" type="button" aria-label="Increase ticket quantity"
+                                    class="flex h-7 w-7 items-center justify-center border border-white/10 text-apex-silver transition-colors hover:border-apex-red hover:text-white light:border-apex-onyx/10 light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        <button id="buy-button" type="button"
+                            class="mt-4 flex w-full items-center justify-between bg-apex-red px-5 py-3 text-xs font-bold transition-colors hover:bg-apex-mahogany text-white">
+                            <span>GET TICKETS NOW</span>
+                            <span id="total-price">$900</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative mx-auto w-full max-w-[465px]">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-apex-carbon">
+                        <img src="./img/white-eagle.png" alt="White Eagle, champion humanoid combat robot"
+                            class="h-full w-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-apex-onyx via-transparent to-apex-onyx/10">
+                        </div>
+                        <div class="absolute bottom-0 left-0 flex w-full items-end justify-between p-4 text-white">
+                            <div>
+                                <span class="block text-[9px] font-bold tracking-widest text-apex-red">
+                                    CHAMPION
+                                </span>
+                                <h2 class="font-display text-3xl font-bold uppercase leading-none sm:text-4xl text-white">
+                                    White Eagle
+                                </h2>
+                            </div>
+                            <div class="text-right text-[9px] tracking-wider text-apex-silver light:text-apex-grey">
+                                <span class="block">T800-WE01</span>
+                                <span class="block">14-1-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECCION DE ATLETAS -->
+        <section
+            class="flex flex-col relative mx-auto max-w-7xl px-4 pb-10 pt-6 md:px-5 md:pt-6 t800 justify-row gap-5">
+            <div>
+                <p class="inline-block text-apex-red text-xs tracking-[3px] uppercase mb-1 light:text-apex-mahogany">
+                    EngineAI T800 Platform
+                </p>
+                <h2 class="font-display text-5xl font-bold text-white light:text-apex-onyx">
+                    T800 ATHLETES
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <article
+                    class="bg-apex-carbon flex h-full min-w-0 flex-col border border-transparent transition-colors duration-500 hover:border-apex-red-dark light:bg-white light:text-apex-onyx">
+                    <div class="overflow-hidden">
+                        <img src="./img/white-eagle.png" alt=""
+                            class="aspect-[4/5] w-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="flex items-start justify-between p-3">
+                        <h3 class="font-display uppercase text-3xl font-bold">white eagle</h3>
+                        <span class="justify-end text-[21px] font-semibold text-apex-silver light:text-apex-carbon/70">14-1-0</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 p-3">
+                        <span class="inline-block border border-apex-silver/30 py-1 px-2 text-xs light:border-apex-onyx/20">T800-WE01</span>
+                        <span class="inline-block border border-apex-silver/30 py-1 px-2 text-xs light:border-apex-onyx/20">78kg</span>
+                        <span class="inline-block border border-apex-silver/30 py-1 px-2 text-xs light:border-apex-onyx/20">450 NM</span>
+                    </div>
+                    <button type="button" data-robot="white-eagle"
+                        class="open-telemetry uppercase p-1 w-full border border-apex-silver/30 bg-apex-onyx transition-colors duration-300 hover:bg-apex-mahogany text-white light:border-apex-onyx">
+                        View Telemetry
+                    </button>
+                </article>
+                <article
+                    class="bg-apex-carbon flex h-full min-w-0 flex-col border border-transparent transition-colors duration-500 hover:border-apex-red-dark light:bg-white light:text-apex-onyx">
+                    <div class="overflow-hidden">
+                        <img src="./img/fighter-titan.png" alt=""
+                            class="aspect-[4/5] w-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="flex items-start justify-between p-3">
+                        <h3 class="font-display uppercase text-3xl font-bold">steel titan</h3>
+                        <span class="justify-end text-[21px] font-semibold text-apex-silver light:text-apex-carbon/70">12-2-0</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 p-3">
+                        <span class="inline-block border border-apex-silver/30 py-1 px-2 text-xs light:border-apex-onyx/20">T800-ST03</span>
+                        <span class="inline-block border border-apex-silver/30 py-1 px-2 text-xs light:border-apex-onyx/20">92kg</span>
+                        <span class="inline-block border border-apex-silver/30 py-1 px-2 text-xs light:border-apex-onyx/20">520 NM</span>
+                    </div>
+                    <button type="button" data-robot="steel-titan"
+                        class="open-telemetry uppercase p-1 w-full border border-apex-silver/30 bg-apex-onyx transition-colors duration-300 hover:bg-apex-mahogany text-white light:border-apex-onyx">
+                        View Telemetry
+                    </button>
+                </article>
+                <article
+                    class="bg-apex-carbon flex h-full min-w-0 flex-col border border-transparent transition-colors duration-500 hover:border-apex-red-dark light:bg-white light:text-apex-onyx">
+                    <div class="overflow-hidden">
+                        <img src="./img/falcon-fighter.png" alt=""
+                            class="aspect-[4/5] w-full object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="flex items-start justify-between p-3">
+                        <h3 class="font-display uppercase text-3xl font-bold">red falcon</h3>
+                        <span class="justify-end text-[21px] font-semibold text-apex-silver light:text-apex-carbon/70">12-2-0</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 p-3">
+                        <span class="inline-block border border-apex-silver/30 py-1 px-2 text-xs light:border-apex-onyx/20">T800-RF07</span>
+                        <span class="inline-block border border-apex-silver/30 py-1 px-2 text-xs light:border-apex-onyx/20">64kg</span>
+                        <span class="inline-block border border-apex-silver/30 py-1 px-2 text-xs light:border-apex-onyx/20">380 NM</span>
+                    </div>
+                    <button type="button" data-robot="red-falcon"
+                        class="open-telemetry uppercase p-1 w-full border border-apex-silver/30 bg-apex-onyx transition-colors duration-300 hover:bg-apex-mahogany text-white light:border-apex-onyx">
+                        View Telemetry
+                    </button>
+                </article>
+            </div>
+        </section>
+        <section id="fight-card" class="mx-auto max-w-7xl px-4 py-12 md:px-5">
+            <!-- Encabezado -->
+            <div class="mb-8 border-b border-white/15 pb-5 light:border-apex-onyx/15">
+                <p class="text-apex-red text-xs font-bold tracking-[4px] uppercase light:text-apex-mahogany">main event · 5 rounds</p>
+                <h2 class="font-display font-bold uppercase text-4xl md:text-5xl">FIGHT CARD</h2>
+            </div>
+            <div
+                class="flex flex-col justify-between md:flex-row text-center p-5 bg-linear-to-r from-apex-carbon via-apex-onyx to-apex-carbon border border-white/10 light:border-apex-onyx/10 light:from-white light:via-apex-smoke light:to-white">
+                <!-- Card White Eagle -->
+                <div class="flex items-center">
+                    <img src="img/white-eagle.png" alt="" class="w-18 h-26 shrink-0 md:w-28 md:h-36">
+                    <div class="px-3 text-left">
+                        <p class="uppercase text-xs tracking-wider">t-800-we01</p>
+                        <p class="uppercase text-5xl font-bold mb-1">white eagle</p>
+                        <p class="uppercase text-apex-red text-xs tracking-wider mt-3 light:text-apex-mahogany">14-1-0 · heavyweight</p>
+                    </div>
+                </div>
+                <p class="uppercase text-apex-red text-5xl font-bold md:self-center light:text-apex-mahogany">vs</p>
+                <!-- White Eagle -->
+                <div class="flex items-center">
+                    <div class="px-3 text-right">
+                        <p class="uppercase text-xs tracking-wider">t800-st03</p>
+                        <p class="uppercase text-5xl font-bold mb-1">steel titan</p>
+                        <p class="uppercase text-apex-red text-xs tracking-wider mt-3 light:text-apex-mahogany">12-2-0 super heavyweight</p>
+                    </div>
+                    <img src="img/fighter-titan.png" alt="" class="w-18 h-26 shrink-0 md:w-28 md:h-36">
+                </div>
+            </div>
+            <div class="p-4 sm:p-6 border border-white/10 bg-linear-to-r from-apex-carbon via-apex-onyx to-apex-carbon light:border-apex-onyx/10 light:from-white light:via-apex-smoke light:to-white">
+                <!-- WEIGHT -->
+                <div class="grid grid-cols-2 lg:grid-cols-[5rem_1fr_9rem_1fr_5rem] items-center gap-x-4 gap-y-2 mb-6">
+                    <p class="font-bold whitespace-nowrap text-2xl col-start-1 row-start-2 lg:col-auto lg:row-auto">
+                        78 <span class="text-xs text-apex-silver font-semibold light:text-apex-carbon/70">kg</span>
+                    </p>
+                    <div
+                        class="flex justify-end w-full h-2 bg-white/10 col-start-1 row-start-3 lg:col-auto lg:row-auto light:bg-apex-onyx/10">
+                        <div class="w-[85%] h-full bg-apex-red text-white"></div>
+                    </div>
+                    <p
+                        class="text-xs uppercase font-semibold tracking-widest text-apex-silver text-center col-span-2 row-start-1 lg:col-auto lg:row-auto light:text-apex-carbon/70">
+                        WEIGHT
+                    </p>
+                    <div class="w-full h-2 bg-white/10 col-start-2 row-start-3 lg:col-auto lg:row-auto light:bg-apex-onyx/10">
+                        <div class="w-full h-full bg-white light:bg-apex-carbon"></div>
+                    </div>
+                    <p
+                        class="font-bold whitespace-nowrap text-2xl text-right col-start-2 row-start-2 lg:col-auto lg:row-auto">
+                        92 <span class="text-xs text-apex-silver font-semibold light:text-apex-carbon/70">kg</span>
+                    </p>
+                </div>
+                <!-- ACTUATOR TORQUE -->
+                <div class="grid grid-cols-2 lg:grid-cols-[5rem_1fr_9rem_1fr_5rem] items-center gap-x-4 gap-y-2 mb-6">
+                    <p class="font-bold whitespace-nowrap text-2xl col-start-1 row-start-2 lg:col-auto lg:row-auto">
+                        450 <span class="text-xs text-apex-silver font-semibold light:text-apex-carbon/70">Nm</span>
+                    </p>
+                    <div
+                        class="flex justify-end w-full h-2 bg-white/10 col-start-1 row-start-3 lg:col-auto lg:row-auto light:bg-apex-onyx/10">
+                        <div class="w-[85%] h-full bg-apex-red text-white"></div>
+                    </div>
+                    <p
+                        class="text-xs uppercase font-semibold tracking-widest text-apex-silver text-center col-span-2 row-start-1 lg:col-auto lg:row-auto light:text-apex-carbon/70">
+                        ACTUATOR TORQUE
+                    </p>
+                    <div class="w-full h-2 bg-white/10 col-start-2 row-start-3 lg:col-auto lg:row-auto light:bg-apex-onyx/10">
+                        <div class="w-full h-full bg-white light:bg-apex-carbon"></div>
+                    </div>
+                    <p
+                        class="font-bold whitespace-nowrap text-2xl text-right col-start-2 row-start-2 lg:col-auto lg:row-auto">
+                        520 <span class="text-xs text-apex-silver font-semibold light:text-apex-carbon/70">Nm</span>
+                    </p>
+                </div>
+                <!-- STRIKE VELOCITY -->
+                <div class="grid grid-cols-2 lg:grid-cols-[5rem_1fr_9rem_1fr_5rem] items-center gap-x-4 gap-y-2 mb-6">
+                    <p class="font-bold whitespace-nowrap text-2xl col-start-1 row-start-2 lg:col-auto lg:row-auto">
+                        9.4 <span class="text-xs text-apex-silver font-semibold light:text-apex-carbon/70">m/s</span>
+                    </p>
+                    <div
+                        class="flex justify-end w-full h-2 bg-white/10 col-start-1 row-start-3 lg:col-auto lg:row-auto light:bg-apex-onyx/10">
+                        <div class="w-full h-full bg-apex-red text-white"></div>
+                    </div>
+                    <p
+                        class="text-xs uppercase font-semibold tracking-widest text-apex-silver text-center col-span-2 row-start-1 lg:col-auto lg:row-auto light:text-apex-carbon/70">
+                        STRIKE VELOCITY
+                    </p>
+                    <div class="w-full h-2 bg-white/10 col-start-2 row-start-3 lg:col-auto lg:row-auto light:bg-apex-onyx/10">
+                        <div class="w-[85%] h-full bg-white light:bg-apex-carbon"></div>
+                    </div>
+                    <p
+                        class="font-bold whitespace-nowrap text-2xl text-right col-start-2 row-start-2 lg:col-auto lg:row-auto">
+                        8.1 <span class="text-xs text-apex-silver font-semibold light:text-apex-carbon/70">m/s</span>
+                    </p>
+                </div>
+                <!-- KO RECORD -->
+                <div class="grid grid-cols-2 lg:grid-cols-[5rem_1fr_9rem_1fr_5rem] items-center gap-x-4 gap-y-2">
+                    <p class="font-bold whitespace-nowrap text-2xl col-start-1 row-start-2 lg:col-auto lg:row-auto">
+                        11 <span class="text-xs text-apex-silver font-semibold light:text-apex-carbon/70">KO</span>
+                    </p>
+                    <div
+                        class="flex justify-end w-full h-2 bg-white/10 col-start-1 row-start-3 lg:col-auto lg:row-auto light:bg-apex-onyx/10">
+                        <div class="w-full h-full bg-apex-red text-white"></div>
+                    </div>
+                    <p
+                        class="text-xs uppercase font-semibold tracking-widest text-apex-silver text-center col-span-2 row-start-1 lg:col-auto lg:row-auto light:text-apex-carbon/70">
+                        KO RECORD
+                    </p>
+                    <div class="w-full h-2 bg-white/10 col-start-2 row-start-3 lg:col-auto lg:row-auto light:bg-apex-onyx/10">
+                        <div class="w-[90%] h-full bg-white light:bg-apex-carbon"></div>
+                    </div>
+                    <p
+                        class="font-bold whitespace-nowrap text-2xl text-right col-start-2 row-start-2 lg:col-auto lg:row-auto">
+                        10 <span class="text-xs text-apex-silver font-semibold light:text-apex-carbon/70">KO</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="highlights" class="mx-auto max-w-7xl px-4 py-12 md:px-5">
+            <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+
+                <!-- Video principal -->
+                <article>
+                    <video
+                        class="aspect-video w-full bg-apex-carbon object-contain"
+                        controls
+                        preload="metadata"
+                        poster="./img/fight-highlight.png">
+                        <source src="./videos/video-apex-1.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+
+                    <h3 class="font-display mt-3 text-2xl font-bold uppercase leading-tight">
+                        White Eagle Flatlines Titan-II in R2
+                    </h3>
+                    <p class="mt-2 text-xs text-apex-silver light:text-apex-carbon/70">
+                        ◉ 2.4M views
+                    </p>
+                </article>
+
+                <!-- Videos secundarios -->
+                <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+
+                    <!-- Video 2 -->
+                    <article>
+                        <video
+                            class="aspect-video w-full bg-apex-carbon object-contain"
+                            controls
+                            preload="metadata"
+                            poster="./img/fight-highlight.png">
+                            <source src="./videos/video-apex-2.mp4" type="video/mp4">
+                            Tu navegador no soporta videos.
+                        </video>
+
+                        <h3 class="font-display mt-3 text-lg font-bold uppercase leading-tight">
+                            APEX 07: Full Main Event Replay
+                        </h3>
+                        <p class="mt-2 text-xs text-apex-silver light:text-apex-carbon/70">
+                            ◉ 1.1M views
+                        </p>
+                    </article>
+
+                    <!-- Video 3 -->
+                    <article>
+                        <video
+                            class="aspect-video w-full bg-apex-carbon object-contain"
+                            controls
+                            preload="metadata"
+                            poster="./img/fight-highlight.png">
+                            <source src="./videos/video-apex-3.mp4" type="video/mp4">
+                            Tu navegador no soporta videos.
+                        </video>
+
+                        <h3 class="font-display mt-3 text-lg font-bold uppercase leading-tight">
+                            Red Falcon Spinning Heel KO
+                        </h3>
+                        <p class="mt-2 text-xs text-apex-silver light:text-apex-carbon/70">
+                            ◉ 3.8M views
+                        </p>
+                    </article>
+
+                    <!-- Video 4 -->
+                    <article>
+                        <video
+                            class="aspect-video w-full bg-apex-carbon object-contain"
+                            controls
+                            preload="metadata"
+                            poster="./img/fight-highlight.png">
+                            <source src="./videos/video-apex-4.mp4" type="video/mp4">
+                            Tu navegador no soporta videos.
+                        </video>
+
+                        <h3 class="font-display mt-3 text-lg font-bold uppercase leading-tight">
+                            Weigh-ins & Actuator Calibration
+                        </h3>
+                        <p class="mt-2 text-xs text-apex-silver light:text-apex-carbon/70">
+                            ◉ 18K views
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPONSORS -->
+        <section class="border-t border-white/10 px-4 py-12 md:px-5 light:border-apex-onyx/10">
+            <div class="mx-auto max-w-7xl">
+                <!-- Encabezado -->
+                <div
+                    class="mb-8 flex flex-col justify-between gap-4 border-b border-white/15 pb-6 md:flex-row md:items-end light:border-apex-onyx/15">
+                    <div>
+                        <p class="mb-2 text-xs font-bold uppercase tracking-[3px] text-apex-red light:text-apex-mahogany">
+                            SOCIO TITULAR · OFFICIAL PARTNERS
+                        </p>
+                        <h2 class="font-display text-4xl font-bold uppercase sm:text-5xl">
+                            MONSTER'S CINEMA
+                        </h2>
+                    </div>
+                    <p class="text-xs uppercase tracking-wider text-apex-silver light:text-apex-carbon/70">
+                        OFFICIAL HOST & PRESENTING SPONSOR
+                    </p>
+                </div>
+                <!-- Grid de patrocinadores -->
+                <div class="grid grid-cols-2 md:grid-cols-4 w-full border-t border-apex-smoke/10 light:border-apex-onyx/15">
+                    <div
+                        class="flex items-center justify-center p-4 sm:p-8 text-center text-sm sm:text-lg font-semibold tracking-wider sm:tracking-widest text-apex-silver hover:text-white border-b border-r border-apex-smoke/10 transition-colors light:border-apex-onyx/15 light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                        ENGINEAI
+                    </div>
+                    <div
+                        class="flex items-center justify-center p-4 sm:p-8 text-center text-sm sm:text-lg font-semibold tracking-wider sm:tracking-widest text-apex-silver hover:text-white border-b md:border-r border-apex-smoke/10 transition-colors light:border-apex-onyx/15 light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                        SERVOTEK
+                    </div>
+                    <div
+                        class="flex items-center justify-center p-4 sm:p-8 text-center text-sm sm:text-lg font-semibold tracking-wider sm:tracking-widest text-apex-silver hover:text-white border-b border-r border-apex-smoke/10 transition-colors light:border-apex-onyx/15 light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                        KINETIK
+                    </div>
+                    <div
+                        class="flex items-center justify-center p-4 sm:p-8 text-center text-sm sm:text-lg font-semibold tracking-wider sm:tracking-widest text-apex-silver hover:text-white border-b border-apex-smoke/10 transition-colors light:border-apex-onyx/15 light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                        ARENAONE
+                    </div>
+                    <div
+                        class="flex items-center justify-center p-4 sm:p-8 text-center text-sm sm:text-lg font-semibold tracking-wider sm:tracking-widest text-apex-silver hover:text-white border-b md:border-b-0 border-r border-apex-smoke/10 transition-colors light:border-apex-onyx/15 light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                        VOLTRA
+                    </div>
+                    <div
+                        class="flex items-center justify-center p-4 sm:p-8 text-center text-sm sm:text-lg font-semibold tracking-wider sm:tracking-widest text-apex-silver hover:text-white border-b md:border-b-0 md:border-r border-apex-smoke/10 transition-colors light:border-apex-onyx/15 light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                        TORQLINE
+                    </div>
+                    <div
+                        class="flex items-center justify-center p-4 sm:p-8 text-center text-sm sm:text-lg font-semibold tracking-wider sm:tracking-widest text-apex-silver hover:text-white border-r border-apex-smoke/10 transition-colors light:border-apex-onyx/15 light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                        HEXACORE
+                    </div>
+                    <div
+                        class="flex items-center justify-center p-4 sm:p-8 text-center text-sm sm:text-lg font-semibold tracking-wider sm:tracking-widest text-apex-silver hover:text-white transition-colors light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                        IRONPULSE
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="border-t border-white/10 bg-apex-carbon light:border-apex-onyx/10 light:bg-white">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-12 md:grid-cols-2 md:gap-16 md:px-5">
+            <!-- Marca -->
+            <div>
+                <a href="#" class="inline-block text-3xl font-bold tracking-tight">
+                    APEX<span class="text-apex-red light:text-apex-mahogany">.</span>
+                </a>
+                <p class="mt-2 max-w-xs text-sm leading-relaxed text-apex-silver light:text-apex-carbon/70">
+                    Real humanoid engineering. Real knockouts.
+                    Patrocinated by Monster's Cinema.
+                </p>
+                <!-- Redes sociales -->
+                <div class="mt-5 flex gap-3">
+                    <a href="#" aria-label="Instagram"
+                        class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-apex-grey transition-colors hover:border-apex-red hover:text-white light:border-apex-onyx/15 light:text-apex-carbon/80 light:hover:text-apex-mahogany light:hover:border-apex-mahogany">
+                        IG
+                    </a>
+                    <a href="#" aria-label="YouTube"
+                        class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-apex-grey transition-colors hover:border-apex-red hover:text-white light:border-apex-onyx/15 light:text-apex-carbon/80 light:hover:text-apex-mahogany light:hover:border-apex-mahogany">
+                        YT
+                    </a>
+                    <a href="#" aria-label="X"
+                        class="flex h-9 w-9 items-center justify-center border border-white/15 text-sm text-apex-grey transition-colors hover:border-apex-red hover:text-white light:border-apex-onyx/15 light:text-apex-carbon/80 light:hover:text-apex-mahogany light:hover:border-apex-mahogany">
+                        X
+                    </a>
+                </div>
+            </div>
+            <!-- Suscripcion -->
+            <div>
+                <h2 class="font-display text-xl font-bold uppercase">
+                    GET FIGHT ALERTS
+                </h2>
+                <p class="mt-1 text-xs text-apex-silver light:text-apex-carbon/70">
+                    Presale codes, weigh-in streams and K.O. clips first.
+                </p>
+                <form class="mt-4 flex flex-col gap-2 sm:flex-row">
+                    <label for="email-alerts" class="sr-only">
+                        Email address
+                    </label>
+                    <input id="email-alerts" type="email" name="email" placeholder="you@email.com" autocomplete="email"
+                        required
+                        class="min-w-0 flex-1 border border-white/15 bg-apex-onyx px-3 py-3 text-sm text-white outline-none focus:border-apex-red light:border-apex-onyx/15 light:bg-apex-smoke light:text-apex-onyx light:placeholder:text-apex-carbon/60">
+                    <button type="submit"
+                        class="bg-apex-red px-6 py-3 text-sm font-bold uppercase transition-colors hover:bg-apex-mahogany text-white">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="border-t border-white/10 light:border-apex-onyx/10">
+            <div class="mx-auto max-w-7xl px-4 py-5 text-xs text-apex-silver md:px-5 light:text-apex-carbon/70">
+                &copy 2026 APEX Combat League. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <dialog id="telemetry-modal" aria-labelledby="modal-name"
+        class="m-auto w-[90%] max-w-lg max-h-[90vh] overflow-y-auto border border-white/20 bg-apex-carbon p-5 text-white backdrop:bg-apex-onyx/80 light:border-apex-onyx/20 light:bg-white light:text-apex-onyx light:backdrop:bg-apex-onyx/60">
+        <div class="mb-5 flex items-start justify-between">
+            <div>
+                <p class="text-xs tracking-widest text-apex-red light:text-apex-mahogany">
+                    T800 ATHLETE TELEMETRY
+                </p>
+                <h2 id="modal-name" class="font-display mt-1 text-3xl font-bold uppercase"></h2>
+                <p id="modal-id" class="text-sm text-apex-silver light:text-apex-carbon/70"></p>
+            </div>
+            <button id="close-modal" aria-label="Close telemetry" class="text-2xl text-apex-silver hover:text-white light:text-apex-carbon/70 light:hover:text-apex-mahogany">
+                &times;
+            </button>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+            <div class="bg-apex-carbon p-3 light:bg-apex-smoke">
+                <p class="text-xs text-apex-silver light:text-apex-carbon/70">WEIGHT CLASS</p>
+                <p id="modal-weight" class="font-semibold"></p>
+            </div>
+            <div class="bg-apex-carbon p-3 light:bg-apex-smoke">
+                <p class="text-xs text-apex-silver light:text-apex-carbon/70">FIGHTING STYLE</p>
+                <p id="modal-style" class="font-semibold"></p>
+            </div>
+            <div class="bg-apex-carbon p-3 light:bg-apex-smoke">
+                <p class="text-xs text-apex-silver light:text-apex-carbon/70">MASS</p>
+                <p id="modal-mass" class="font-semibold"></p>
+            </div>
+            <div class="bg-apex-carbon p-3 light:bg-apex-smoke">
+                <p class="text-xs text-apex-silver light:text-apex-carbon/70">PEAK TORQUE</p>
+                <p id="modal-torque" class="font-semibold"></p>
+            </div>
+            <div class="bg-apex-carbon p-3 light:bg-apex-smoke">
+                <p class="text-xs text-apex-silver light:text-apex-carbon/70">STRIKE VELOCITY</p>
+                <p id="modal-velocity" class="font-semibold"></p>
+            </div>
+            <div class="bg-apex-carbon p-3 light:bg-apex-smoke">
+                <p class="text-xs text-apex-silver light:text-apex-carbon/70">KNOCKOUTS</p>
+                <p id="modal-knockouts" class="font-semibold"></p>
+            </div>
+            <div class="bg-apex-carbon p-3 light:bg-apex-smoke">
+                <p class="text-xs text-apex-silver light:text-apex-carbon/70">RECORD</p>
+                <p id="modal-record" class="font-semibold"></p>
+            </div>
+            <div class="bg-apex-carbon p-3 light:bg-apex-smoke">
+                <p class="text-xs text-apex-silver light:text-apex-carbon/70">DEGREES OF FREEDOM</p>
+                <p id="modal-dof" class="font-semibold"></p>
+            </div>
+        </div>
+        <button id="close-modal-bottom" class="mt-6 w-full bg-apex-red p-3 font-bold uppercase hover:bg-apex-mahogany text-white">
+            Close Telemetry
+        </button>
+    </dialog>
+    <script src="./js/index.js"></script>
+</body>
+</html>
