@@ -2,7 +2,6 @@
 
 @import "tailwindcss";
 
-/* Activa modo claro */
 @custom-variant light (&:where(.light, .light *));
 
 @theme {
