@@ -230,12 +230,19 @@ document.getElementById("close-modal-bottom").addEventListener("click", () => {
 
 let codigoSecreto = "";
 
+const modalEasterEgg = document.getElementById("easter-egg");
+const cerrarEasterEgg = document.getElementById("cerrar-easter-egg");
+
 document.addEventListener("keydown", (event) => {
     codigoSecreto += event.key.toLowerCase();
     codigoSecreto = codigoSecreto.slice(-4);
 
     if (codigoSecreto === "apex") {
-        alert("🤖 ERROR 404: HUMANOS NO ENCONTRADOS.\nTodos los robots han tomado el control de APEX.\nEmmanuel es el único sobreviviente");
+        modalEasterEgg.showModal();
         codigoSecreto = "";
     }
+});
+
+cerrarEasterEgg.addEventListener("click", () => {
+    modalEasterEgg.close();
 });
